@@ -1,0 +1,56 @@
+import java.util.Scanner;
+class NestedSwitchDemo{
+	public static void main(String arg[]){
+	/*Scanner sc = new Scanner(System.in);
+	
+	char c = sc.next().charAt(0);
+
+	switch(c){
+
+	case '+':
+		System.out.println("pls enter how many numbers u want to add");
+		int i = sc.nextInt();
+		switch(i){
+				case 1: 
+					System.out.println("one number cannot be added");
+					break;
+				case 2:
+					int a1 = sc.nextInt();
+					int a2 = sc.nextInt();
+					int result = a1 + a2;
+					System.out.println("Result "+result);
+					break;
+				default:
+					System.out.println("we can add only 2 numbers");
+					break;
+			}
+
+		break;
+	case '-' :
+		System.out.println("substrat");
+		break;
+	default : 
+		System.out.println("Invlaid input");
+		break;
+
+	}
+	*/
+	
+//ternary
+//	condition ?(true) :(flase) ;
+		
+	int i = 10 ;
+
+	/*(i<10)?(System.out.print("i is less 10");
+		System.out.print("asfhakjds");	)	  
+	      :((i>10)? (System.out.print("i is greater 10");)
+	             :(System.out.print("i is eual 10");)	);*/
+
+
+	/*(i<10)?(System.out.print("i is less 10");
+		System.out.print("asfhakjds");) :((i>10)?(System.out.print("i is greater 10");:(System.out.print("i is eual 10");));*/
+
+	}
+	
+
+}
