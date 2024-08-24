@@ -1,0 +1,83 @@
+Day4 
+-------
+int a = 0;
+for(a>10;a++){
+SOP("ajkadh");
+}
+
+for(int i = 0 ; i<5 ; i++){
+	if(true){
+	break;
+	}
+	sop("safkhjkas");
+}
+-----------------------------------
+Class & object
+---------------
+
+OOPS - object oriented prog.
+
+c 
+c++
+java
+
+
+top-bottom
+
+bottom-top
+
+
+
+class 
+------
+
+is collection objects....
+its blueprint
+
+will its own property and behavior
+
+property - data members
+behavior - members func/mthods
+
+
+laptop----- 
+P - memory ,ModelName, Processor, OS, battery, ScreenResolution
+M - WatchMoviw, clickPhoto, typeNotepad, Sound, Gaming
+
+notebooks ----
+P - name, noOfPages, type,quality
+M - makingNotes, writing, drawing
+
+
+------------------------------
+method syntax
+
+<non-access><Access-Specifiers><return type> nameOfMethod () { }
+
+RT values 
+pritmitive DT
+non-primitve DT
+
+-------------------
+
+in java 
+
+local , global
+instance var
+static var
+
+------------
+constructor - 
+------
+same name as a classname
+special method without RT.
+used to initialse the instance variable.
+
+types :
+1. default 
+2. parameter
+	a. zero parameter
+	b. one parameter
+
+
+
