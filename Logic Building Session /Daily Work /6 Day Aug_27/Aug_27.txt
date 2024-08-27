@@ -1,0 +1,195 @@
+Aptitude will be there in our cc exam 
+40 question will be there mostly 
+
+30 to 45 sec good for aptitude per minute 
+
+Roadmap || approach 
+
+speed (30 to 40 sec ) easy 
+medium ( 1 to 2 min ) 
+hard (10 to 15 min ) hard  
+
+accuracy
+
+attempt all the questions of aptitude  
+
+OS 
+what is os 
+how does it works 
+
+
+Examples of well knowon OS : 
+Mobile os : Android , IOS , windows 
+Embedded SYstem os : smart watch , 
+Real Time OS ; HRT , SRT ( hard real time , Soft real time )
+
+HRT (not even a nano second of delay is accepted ) 
+SRT ( some nano second of delay is accepted ) 
+
+Desktop OS ; Personal COmputer 
+
+windows os ; dot net core 
+android os ; java swing 
+
+server machine os ; 
+
+linux ; it is a open source (we can adopt that code ) 
+boss ( bharat operating system ) one of the unix distribution
+
+linux comes with cmd + gui 
+
+Function of OS ; 
+	- Process management 
+whatever there is a process it is a process management 
+
+	- Memory Management (physical memory (ram)) 
+
+	- Device Management 
+
+	- Network Management (Network card / Controller ) 
+
+	- File Management 
+
+	- Security Management (firewall , Anti virus , anti spyware )
+	
+
+what is interrupt and what is system call 
+
+Data segment  : Stack HEap 
+
+Code segment  : 
+
+Memory Hierarchy 
+
+primary - ROM (PROM , EPROM , EEPROM ) , Ram (SRAM , DRAM ) 
+
+Secondary - HDD , magnetic Disk , USB pendrive , optical drives , CD's , Floppy 
+
+
+REGISTER 
+CACHE 
+RAM 
+HDD 
+EXTERNAL DEVICES 
+
+Hierarchy in speed and cost is rising towards register but rising  
+in repect to space towards external devices 
+
+the data in REgister , cache and ram are volatile 
+but rom , hdd and other are non volatile 
+
+Types of Operating systems 
+
+1. Batch Operating SYstem 
+2. Multi- programming os 
+3. Mutiprocessor OS 
+4. DIstributed OS 
+5. Desktop OS 
+6. Server os 
+
+Multi processing system 
+what is degree of parallelism 
+
+Distributed OS 
+
+
+
+***Linux***
+
+it is an open source operating system . 
+it is available free to use and user can modify it according their needs . 
+- The founder or Linux is linun Torvards .
+- IT is available since 1991. 
+- An Open Source community is working behind the updation and upgradation of the Linux code. 
+- Features . 
+	1. No cost / Low cost 
+	2. Multi-Tasking 
+	3. Security 
+	4. Multi-user 
+	5. Stable and Scalable 
+	6. Networking 
+	7. CLI as well as GUI 
+	8. Better file System 
+
+-Working with basics file system of Linux 
+- / is root directory 
+	1. / bin : user Bineries 
+	2. / sbin : System Bineries 
+	3. / etc : Configuration Files 
+	4. / dev : device files 
+	5. / proc : Process Information
+	6. / var : Varialbes Files 
+	7. / tmp : Temporary FIles 
+	8. / usr : User Programs 
+	9. / home : Parent Directory of User friendly 
+	10. / boot : Boot Loader Files 
+	11. / opt : Apps 
+	12. / lib : System Libraries 
+ 
+COmmands : 
+1. " nano " : creates the files : it actually run the nano editor and open the specified file . 
+// if nano doesn't find the file it creates the file 
+2. ls : it list out all the files and directory 
+3. touch : to create the file // only to create the file 
+4. mkdir : "folder name " to create the folder 
+5. ls -l : gives file permission , owner , sub user , file name , date , time and size 
+6. chmod : to give and revoke the file or directories permission. 
+7. rm : remove files rm -r "dir file name " 
+rmdir : to remove 
+8. pwd : to know the directory we are currently in 
+present working directory 
+9. cd : to change directory 
+
+
+r- Read 
+W- write 
+x- Execute 
+d- directory 
+- - file 
+u - owner 
+g - group 
+a - all users 
+
+white colour its a file 
+blue colour its a directory 
+
+drwx-rwx-rwx 
+owner -- group --- other (file position )
+ 
+chmod to define whom to give what permissions 
+" chmod u+x file1.txt " 
+
+### to remove a parent directory we need to kill sub
+
+remaining piping concept 
+
+https://ubuntu.com/tutorials/command-line-for-beginners#1-overview
+
+https://help.ubuntu.com/community/FilePermissions
+
+
+ls commands options find out ? for eg ls -l 
+DMA (direct memory access ) 
+
+Syllabus Covered today 
+
+OS Content Discussed Day-1
+- What is OS; 
+- How is it different from other application software; 
+- Why is it hardware dependent?
+- Different components of OS
+- Basic computer organization required for OS.
+- Examples of well-known OS including mobile OS, embedded system OS, Real Time OS, desktop OS, server machine OS etc. ; 
+- How are these different from each other and why
+- Briefly discussed Functions of OS
+- Introduction to User and Kernel space and mode
+- Linux OS and its features
+- Working basics of file system of Linux
+- Commands associated with files/directories
+- other basic commands
+- What are file permissions and how to set them
+- Giving and revoking permissions using chmod for Owner, Group and Other users
+
+
+
+
