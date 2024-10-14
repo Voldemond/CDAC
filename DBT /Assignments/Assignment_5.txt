@@ -1,0 +1,80 @@
+Assignment –5 
+Relational and Logical Operators.
+ 
+1) Write a query that will give you all orders for more than Rs. 1,000. 
+=> 
+mysql> Select *
+    -> from orders
+    -> where Amt > 1000;
+ERROR 2013 (HY000): Lost connection to MySQL server during query
+No connection. Trying to reconnect...
+Connection id:    17
+Current database: cdacmumbai
+
++------+---------+------------+------+------+
+| Onum | Amt     | Odate      | Cnum | Snum |
++------+---------+------------+------+------+
+| 3002 | 1900.10 | 1990-10-03 | 2007 | 1004 |
+| 3005 | 5160.45 | 1990-10-03 | 2003 | 1002 |
+| 3006 | 1098.16 | 1990-10-03 | 2008 | 1007 |
+| 3009 | 1713.23 | 1990-10-04 | 2002 | 1003 |
+| 3008 | 4723.00 | 1990-10-05 | 2006 | 1001 |
+| 3010 | 1309.95 | 1990-10-06 | 2004 | 1002 |
+| 3011 | 9891.88 | 1990-10-06 | 2006 | 1001 |
++------+---------+------------+------+------+
+ 
+2) Write a query that will give you the names and cities of all salespeople in 
+London with a commission above 0.10
+=>
+mysql> Select Sname ,City
+    -> from salespeople
+    -> where City = 'London'
+    -> AND Comm > 0.10;
++--------+--------+
+| Sname  | City   |
++--------+--------+
+| Peel   | London |
+| Motika | London |
++--------+--------+
+ 
+3) Write a query on the Customers table whose output will exclude all customers 
+with a rating <= 100, unless they are located in Rome. 
+=> 
+mysql> Select *
+    -> from customers
+    -> where (Rating > 100 and City = 'Rome');
++------+----------+------+--------+------+
+| Cnum | Cname    | City | Rating | Snum |
++------+----------+------+--------+------+
+| 2002 | Giovanni | Rome |    200 | 1003 |
++------+----------+------+--------+------+
+
+4) What will be the output from the following query? 
+ 
+ Select * from Orders 
+ where (amt < 1000 OR 
+ NOT (odate = ‘1990-10-03’ 
+ AND cnum > 2003)); 
+
+=> 
+I. Output of the following query will return all the orders which are lesser than 1000 in amount . 
+
+II. orders that don't have the Odate = '1990-10-03' or have a Cnum <= 2003 even if the amount is greater than 1000. 
+ 
+5) What will be the output of the following query? 
+ 
+ Select * from Orders 
+ where NOT ((odate = ‘1990-10-03’ OR snum 
+ >1006) AND amt >= 1500); 
+
+=> 
+ 
+6) What is a simpler way to write this query? 
+ 
+ Select snum, sname, city, comm From Salespeople 
+where (comm > .12 OR comm <.14);
+
+=> 
+mysql> select Snum , Sname, city , Comm
+    -> From salespeople
+    -> where Comm between 0.12 and 0.14 ;
