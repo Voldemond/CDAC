@@ -1,0 +1,16 @@
+Assignment 2
+
+Introducing Relational Databases.
+
+1) Which field of the Customers table is the primary key?
+=> Primary Key of the Customers table is CNUM .
+
+
+2) What is the 4th column of the Customers table?
+=> Rating
+
+3) What is another word for row? For column?
+=> Another Word for row is tuple , and Another Word for column attribute. 	
+
+4) Why isn’t it possible to see the first five rows of a table?
+=> In SQL, unless you use a query like SELECT * FROM table_name LIMIT 5; , the database doesn't automatically return only the first five rows.  
