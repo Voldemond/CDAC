@@ -1,0 +1,181 @@
+abhishek purohit 
+jaipur based 
+7+ experiance 
+8 + experiance 
+
+pratham software full stack 
+
+Web Applications 
+
+Desktop Apps :	 the apps which are running directly on OS 
+Mobile Apps : 
+Web Apps : 	Dosesn't Need to be Installed 
+
+Client 
+
+Server -> machine similar to pc / laptop 
+	Server Has RAM , CPU  ,  Storage Units 
+
+
+Client ---------------->  Server 
+
+Client <---------------- Server 
+
+
+Frontend : UI 
+HTML , CSS , JS , BootStrap , React  // vs Angular , vue js , next js 
+
+HTML : Hyper Text Markup Language 
+	HTML is used to create a Layout of web app , HTML , is used to display a content on the web page 
+
+CSS : Cascading Style Sheet : styling of web page , beautification 
+
+JS : is for client side Scripting 
+	Form validation , animations , arithmetic operations , popups 
+
+LiveScript 
+
+Boostrap : respnsive 
+
+React 
+
+Backend : Operations + Database 
+Operations : 
+C , C++ , Java , Python , php , .net , JS 
+
+Database : MySQL , MongoDB, SQLServer , SQLite , PostgreSQL , Cassandra , 
+
+Node JS : is not a lang , not a library 
+it is a runtime environment for js 
+
+MERN STACK 
+MEAN STACK 
+
+CLIENT & SERVER Technical aspects 
+
+Analogy for request : 
+1. client sends request to server : 
+	To send request we need url (end-point ) of the server. 
+
+2. Method of the request : ( purpose of the request ) 
+	is it for getting the data from server ,saving data on the server , deleteing , updating data 
+
+GET , POST , PUT , DELETE , PATCH 
+
+Analogy for the response / Server : 
+
+1. Server will accept the request 
+2. It will start the processing 
+3. Server will generate the response 
+	
+	We have certain properties associated with the respnse : 
+	
+	1. Response Data -> Array , String , page 
+	2. Response Status -> Status code is always a numeric value and will have a msg associated with it 
+
+	200 201 202 203 ... 209 -> success event from a server 
+	300 301 302 ... 399     -> Rdirection 
+	400 401 402 ... 
+	500 501 502 ...
+
+
+w3 schools 
+html 
+home --------------- list 
+client and server architecture 
+
+HTML : HTML is only creating layout of UI . It is used to display data in the web page . 
+
+In HTML we have to use inbuilt tags 
+
+<abcd> { opening tag 
+
+</abcd> } closing tag 
+
+{ } 
+
+<table> 
+	<tr> 
+		<td> </td> 
+	</tr> 
+	<tr> 
+	</tr> 
+</table > 
+	
+
+
+form tag is used to submit the data ( not to display the form fields ) 
+form tag is having two attributes : 
+1. action: url on which request has to be submitted 
+2. mehtod : request method using which will be setn on action url 
+	if no method has been specified then by default it will consider GET request only 
+
+Code 
+
+<DOCTYPE>
+<html>
+    <head>
+        <title>
+            My first Page 
+        </title>
+    </head>
+    <body>
+        <h1>
+            Hello world 
+        </h1>
+        <!-- order list -->
+        <ol>
+            <li>Mumbai</li>
+            <li>Delhi </li>
+        </ol>
+<!-- table  -->
+        <table> 
+           <th>ID </th>
+           <th>PHONE </th>
+           <th>ADDRESS </th>
+
+           <tr> 
+                <td>1 </td>
+                <td>Kunal</td>
+                <td> Jalgaon </td>
+           </tr>
+           <tr>
+                <td>2 </td>
+                <td>Shreya</td>
+                <td>Kalyan</td>
+           </tr>
+           <tr>
+                <td>3 </td>
+                <td>Aniket </td>
+                <td>Sion</td>
+           </tr>
+           <tr>
+                 <td>4 </td>   
+                 <td>Aaditya</td>
+                 <td>Chembur</td>
+           </tr>
+        </table > 
+        <br> 
+
+        <!-- <thead>
+            <tr>
+                <th>ID </th>
+                <th>PHONE </th>
+                <th>ADDRESS </th>
+            </tr>
+        </thead> -->
+
+
+        <form action="https://www.google.com">
+            <input type="Enter Your Name ">
+            <br>
+            <input type="password" value="Password">
+            <br>
+            <input type="submit" value="Sign up">
+            <input type="button" value="Click me ">
+        </form>
+
+        
+    </body>
+</html>
+
