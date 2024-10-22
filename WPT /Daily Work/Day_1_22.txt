@@ -1,0 +1,280 @@
+HTML: HTML is only creating layout of UI. It is used to display data in the web page
+
+In HTML we have to use inbuilt tags 
+
+<abcd> { opening tag
+  Hello 
+</abcd> } closing tag
+
+<p>
+	This is a para 
+</p>
+
+h1 h2 h3 h4 h5 h6
+
+<h1>Heading</h1>
+
+.c
+.java
+
+.html / .htm
+
+Basic syntax:
+
+<html>
+   <head>
+      <title>
+         My First Page
+      </title>
+   </head>
+   <body>
+      <h1> Hello World </h1>
+   </body>
+</html>
+
+HTML is case insensitive 
+<HTML>
+	<bOdY>
+	</body>
+</HTML>
+
+HTML is Error free
+
+HTML 5
+
+<!DOCTYPE html> -> To let the browser know that we are utilizing the latest version of HTML and browser will
+enable HTML's latest features in our web page
+
+Two types of tags:
+1. Container tags: opening closing <p> </p>
+2. Empty tags: only opening <br> <img> <input>
+
+<p align="">this is <br> a para demo</p>
+      <a href="https://www.flipkart.com/search?q=iphone+15+plus&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_3_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_3_na_na_na&as-pos=1&as-type=RECENT&suggestionId=iphone+15+plus%7CMobiles&requestId=2b708bfa-a209-4d5c-a22d-8b1700b5b4ef&as-searchtext=iphone%2015%20plus">Click here to purchase Iphone</a>
+
+
+<img src="https://www.partysuppliesindia.com/cdn/shop/products/A2_33_c020ee18-0c82-4dc1-b16d-c90a64707b20.jpg?v=1635508143&width=1500" width="200" height="200">
+
+
+<p>
+         H<sub>2</sub>O
+      </p>
+
+      <p>
+         (a+b)<sup>2</sup>
+      </p>
+
+
+List:
+series of items
+
+1. Ordered list: labels will follow certain sequence like numeric, alphabetic
+
+<ol>
+         <li>Mumbai</li>
+         <li>Delhi</li>
+         <li>Kolkata</li>
+         <li>Chennai</li>
+      </ol>
+
+type: 1 a A I I
+
+2. unordered list
+
+<ul type="disc|circle|square">
+         <li>Mumbai</li>
+         <li>Delhi</li>
+         <li>Chennai</li>
+         <li>Kolkata</li>
+      </ul>
+
+
+
+Table: rows & columns
+
+<table>
+	<tr>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+
+	</tr>
+	<tr>
+
+	</tr>
+</table>
+
+<table border="1">
+         <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Phone</td>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>9876543210</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>Jane Kumar</td>
+            <td>9988776655</td>
+         </tr>
+      </table>
+cellpadding: internal spaces for a cell
+cellspacing: outside space of a cell
+
+
+Semantic tags : thead, tbody
+
+<table border="1" cellspacing="0" cellpadding="10">
+         <thead>
+            <tr>
+               <th>Id</th>
+               <th>Name</th>
+               <th>Phone</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>1</td>
+               <td>John Doe</td>
+               <td>9876543210</td>
+            </tr>
+            <tr>
+               <td>2</td>
+               <td>Jane Kumar</td>
+               <td>9988776655</td>
+            </tr>
+         </tbody>
+         
+         
+      </table>
+
+Semantic: <nav>
+
+      </nav>
+
+      <footer>
+         
+      </footer>
+
+<form action="url" method="post">
+
+      </form>
+
+form tag is used to submit the data (not to display the form fields)
+form tag is having two attributes:
+1. action: url on which request has to be submitted
+2. method: request method using which req will be sent on action url
+           if no method has been specified then by default it will consider GET request only 
+
+form action attribute will be activated when user clicks submit button only 
+user will click submit btn, internally submit event is getting fired 
+now that submit event will send the req on action url
+Web Applications:
+
+Desktop Apps: The apps which are running directly on OS 
+	      First we need to install them
+
+Mobile Apps
+
+Web Apps: Doesn't need to be installed  
+
+Client-> Device/browser 
+Server-> machine similar to pc/laptop
+	Server has RAM, CPU, Storage units 
+
+
+Frontend: UI 
+HTML, CSS, JS, Bootstrap , React 
+
+HTML: Hyper Text Markup Language
+      HTML is used to create a layout of web app, HTML is used to display content on the web page
+
+CSS: Cascading Style Sheet: styling of web page, beautification
+
+JS: is for client side scripting 
+     Form validation, animations, arithmetic operations, popups 
+
+Every browser has a JS Engine (interpreter)
+v8 Engine
+Spider monkey
+
+Bootstrap: responsive 
+
+React: Is a library to develop frontend of web app
+
+
+      
+Backend: Operations + Database 
+
+Operations: JS, Node JS, Express JS
+Database: MySQL, MongoDB
+
+
+Node JS: is not a lang, not a library
+It is runtime environment for JS 
+
+MERN Stack
+MEAN Stack
+
+
+Client & Server technical aspects:
+
+Note: These technical aspects are same for all the clients and server regardless of the tech used
+
+Analogy for request:
+1. Client sends request to server:
+   TO send request we need url(end-point) of the server 
+
+
+2. Method of the request: (Purpose of the request)
+	is it for getting the data from server, saving data on the server, deleting data, updating data 
+   
+   GET, POST, PUT, DELETE, PATCH
+
+
+Analogy for the response/Server:
+
+1. Server will accept the request 
+2. It will start the processing 
+3. Server will generate the response
+
+   We have certain properties associated with the response:
+   1. Response Data-> Array, string, page 
+   2. Response Status -> Status code is always a numeric value and will have a message associated with it
+	200 201 202 203 ... 299 -> Success event from server 
+        300 301 302 ... 399 -> Redirection 
+	400 401 402 ... 499 -> Error due to client mistake 
+	500 501 502 ... 599 -> Error due to server mistake 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
