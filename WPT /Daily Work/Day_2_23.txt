@@ -1,0 +1,146 @@
+Css : to style a page 
+
+Syntax : 
+
+{
+	property-name : value ; 
+	property-name : value ; 
+	property-name : value ; 
+}
+<style>
+h1{
+color: red , 
+}
+</style>
+</head>
+<body>
+	<h1>hello world </h1>
+</body>
+</html>	
+
+It is always recommended to put the style tag in head tag because whenever a html a page loads 
+on the browser it will first load the head tag , now the head tag will prepare the style  to be applied . 
+now the 
+
+emp ( empID , EmpName , Salary , MobNO , DeptID, joining Date , PID ) 
+Dept  ( DID , Dname , Location ) 
+Projects ( Pid , Project Name ) 
+
+SRS DOc 
+
+E-R Diagram 
+Entity relationship Diagram 
+
+Emp - entity 
+Dept - entity 
+Projects - entity 
+
+Emp 
+	id 
+	sal
+	Mob 
+
+
+name 
+	Fname 
+	MN 
+	LN 
+
+Dept 
+	ID 
+	name 
+	Loc 
+
+
+1. Single multivated attributes
+
+2. simple and composite 
+
+3. Stored & derived 
+
+4. Key & non-key 
+
+5. Complex - Composite & Multivalued 
+
+Relation 
+
+one to one 
+one to many 
+many to many 
+
+Eid 	Ename 	Sal 
+e1 	ABC	10
+e2 	P	20
+e3	q	30
+e4 	r	30
+
+Did	Dname	Loc 
+d1 	ADmin	mum
+d2 	course 	navim		
+
+EID	Did 
+e1	D1 
+e2	d2 
+e3	
+e4 
+emp ( empID , EmpName , Salary , MobNO , DeptID, joining Date , PID ) 
+Dept  ( DID , Dname , Location ) 
+Projects ( Pid , Project Name ) 
+
+SRS DOc 
+
+E-R Diagram 
+Entity relationship Diagram 
+
+Emp - entity 
+Dept - entity 
+Projects - entity 
+
+Emp 
+	id 
+	sal
+	Mob 
+
+
+name 
+	Fname 
+	MN 
+	LN 
+
+Dept 
+	ID 
+	name 
+	Loc 
+
+
+1. Single multivated attributes
+
+2. simple and composite 
+
+3. Stored & derived 
+
+4. Key & non-key 
+
+5. Complex - Composite & Multivalued 
+
+Relation 
+
+one to one 
+one to many 
+many to many 
+
+Eid 	Ename 	Sal 
+e1 	ABC	10
+e2 	P	20
+e3	q	30
+e4 	r	30
+
+Did	Dname	Loc 
+d1 	ADmin	mum
+d2 	course 	navim		
+
+EID	Did 
+e1	D1 
+e2	d2 
+e3	
+e4 
