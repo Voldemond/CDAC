@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        p {
+            font-family: 'Georgia', serif;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            background-color: #fff;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+        .highlight {
+            background-color: violet; /* Change background color to highlight */
+            transition: background-color 0.3s; /* Smooth transition for highlighting */
+        }
+
+        a {
+            color: blue; /* Link color */
+            text-decoration: none; /* Remove underline from link */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline link on hover */
+        }
+    </style>
+</head>
+<body>
+    <h2>Q1 : Modify Style</h2>
+    <p id="myParagraph">
+        It is rightly said that being disciplined is essential in life. When a person leads a disciplined life, they set an easy path to success. They will develop an approach to happiness and a beautiful future ahead. Being disciplined is the practice of having a scheduled daily routine which helps an individual to be punctual and hard-working. An individual is taught what being disciplined means from the time they are young. Even though discipline takes a lot of effort, the advantages of a disciplined life make it a worthwhile endeavour.
+    </p>
+    
+    <button onclick="modifyStyle()">Modify</button>
+    <button onclick="resetStyle()">Redo</button>
+
+    <script>
+        function modifyStyle() {
+            const paragraph = document.getElementById('myParagraph');
+            paragraph.style.fontFamily = 'Courier New, monospace';
+            paragraph.style.fontSize = '20px';
+            paragraph.style.color = 'blue';
+        }
+
+        function resetStyle() {
+            const paragraph = document.getElementById('myParagraph');
+            paragraph.style.fontFamily = 'Georgia, serif';
+            paragraph.style.fontSize = '18px';
+            paragraph.style.color = '#333';
+        }
+    </script>
+    <hr>
+
+    <h2>Q2 : Print Form Values </h2>
+    <h3> Enter your Details </h3>
+    <form id="form" onsubmit="getFormValues(event)">
+        First Name: <input type="text" id="firstName"><br><br>
+        Last Name: <input type="text" id="lastName"><br><br>
+        Contact No.: <input type="text" id="contact"><br><br>
+        Email ID: <input type="email" id="email"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h4>Form Values:</h4>
+    <p id="output"></p>
+    <script>
+        function getFormValues() {
+            event.preventDefault();
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const contact = document.getElementById('contact').value;
+            const email = document.getElementById('email').value;
+
+            const output = `
+                First Name: ${firstName}<br>
+                Last Name: ${lastName}<br>
+                Contact No.: ${contact}<br>
+                Email ID: ${email}
+            `;
+            
+            document.getElementById('output').innerHTML = output;
+        }
+    </script>
+    <hr>
+    <h2>Q3 : Remove Items from a Drop-down list</h2>
+    <select id="myDropdown">
+        <option value="item1">Biryani </option>
+        <option value="item2">Tandoori</option>
+        <option value="item3">Crispy</option>
+        <option value="item4">Shwarma</option>
+    </select>
+    <button onclick="removeItem()">Remove Items</button>
+    <script>
+        function removeItem() {
+            const dropdown = document.getElementById('myDropdown');
+            dropdown.remove(dropdown.selectedIndex);
+        }
+    </script>
+    <hr>
+
+    <h2>Q4: Highlight Bold Words on Mouse Hover Over a Link</h2>
+
+    <p>
+        <a href="#" onmouseover="highlightBold()" onmouseout="removeHighlight()">
+            On mouse over here bold words of the following paragraph will be highlighted
+        </a>
+    </p>
+
+    <p id="myParagraph">
+        We <b>have just started</b> this section for the users (beginner to <b>intermediate</b>) who want <b>to work with</b> various <b>JavaScript</b> problems and write scripts online to test <b>their JavaScript</b> skill.
+    </p>
+
+    <script>
+        function highlightBold() {
+            const boldWords = document.querySelectorAll('#myParagraph b');
+            boldWords.forEach(word => {
+                word.classList.add('highlight');
+            });
+        }
+
+        function removeHighlight() {
+            const boldWords = document.querySelectorAll('#myParagraph b');
+            boldWords.forEach(word => {
+                word.classList.remove('highlight');
+            });
+        }
+    </script>
+</body>
+</html>
