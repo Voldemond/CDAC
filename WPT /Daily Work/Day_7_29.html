@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <input type="password" placeholder="Enter password" id="passwordField">
+    <button onclick="togglePassword()" id="passwordBtn">Show </button>
+    <h1 id="heading">This is a heading</h1>
+    <button onclick="toggleVisibility()" id="headingBtn">Hide</button>
+
+
+    <input type="text" placeholder="Enter 1st value" id="n1"> <br><br>
+<input type="text" placeholder="Enter 2nd value" id="n2"> <br><br>
+<button id="btn" onclick="sum()">Sum</button>
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("passwordField");
+            var button = document.getElementById("passwordBtn");
+
+            if (button.innerHTML === "Show Password") {
+                passwordField.setAttribute("type", "text");
+                button.innerHTML = "Hide Password";
+            } else {
+                passwordField.setAttribute("type", "password");
+                button.innerHTML = "Show Password";
+            }
+        }
+        function toggleVisibility() {
+            var myHeading = document.getElementById("heading");
+            var myButton = document.getElementById("headingBtn");
+            if (myButton.innerHTML === "Hide Heading") {
+                myHeading.style.display = "none"; 
+                myButton.innerHTML = "Show Heading"; 
+            } else {
+                myHeading.style.display = "block"; 
+                myButton.innerHTML = "Hide Heading";
+            }
+        }
+    </script>
+    <script>
+        function sum() {
+   var n1Field = document.getElementById("n1");
+            var n2Field = document.getElementById("n2");
+            var num1 = parseFloat(n1Field.value);
+            var num2 = parseFloat(n2Field.value);
+            var c = num1 + num2;
+            alert("The sum is: " + c);
+        
+            console.log("The sum is: " + c);
+        }
+        </script>
+        <h3 id="result"></h3>
+
+        <script>
+        function sum() {
+            var c = 
+            parseInt(document.getElementById("n1").value) + 
+            parseInt(document.getElementById("n2").value);
+            document.getElementById("result").innerHTML = "Sum is " + c;
+        }
+        </script>
+        <input type="text" placeholder="Enter text" id="text"><br><br>
+        <button id="btn" onclick="validate()">Validate Text</button>
+    
+        <script>
+            function validate() {
+                var textField = document.getElementById("text");
+                var text = textField.value;
+                if (text.length >= 4) {
+                    textField.style.borderColor = "green";
+                } else {
+                    textField.style.borderColor = "red";
+                }
+            }
+        </script>
+            <form>
+            <input type="email" placeholder="Enter email" id="email" required> <br><br>
+             <input type="password" placeholder="Enter password" id="password" required> <br><br>
+         <input type="text" placeholder="Confirm password" id="confirm-password" required> <br><br>
+           
+    <select id="qualification" required>
+                    <option value="">---Select qualification---</option>
+                    <option value="btech">BTech</option>
+                  <option value="mtech">MTech</option>
+                    <option value="bsc">BSC</option>
+                </select> <br><br>
+                <label>Gender:</label> <br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label><br><br>
+    <input type="checkbox" id="terms" required>
+    <label for="terms">I accept the terms and conditions</label><br><br>
+            
+                <button type="submit">Register</button>
+            </form>
+</body>
+</html>
