@@ -1,0 +1,283 @@
+destructuring an object:
+
+
+const student = {
+	roll:145,
+	name:"Anuj",
+	marks:96
+}
+
+
+we can take out individual key out from json object, and the keyname will be treated as an individual variable
+
+
+destructuring means, we are extracting out the keys
+
+const { roll,name,marks } = student;
+
+console.log(roll);
+console.log(name);
+console.log(marks);
+
+
+DOM Manipulation:
+
+DOM: Document Object Model
+
+Whenever any html page loads in the browser, so first of all browser will create a tree like structure/model
+that will be containing hierarchy of the tags and the same structure/model is known as DOM
+By reading the same model, the browser decided like which element is parent and which element is child
+
+Once web page has been loaded into the browser, so DOM structure will be created already 
+Now if we are modifying the already created DOM then we can say it as DOM Manipulation
+
+What we can do with DOM manipulation:
+1. We can introduce a new element in the DOM
+2. We can remove any existing element also
+3. We can modify the style 
+4. We can change the content of any element 
+5. We can get the content of any element 
+6. We can get the value of attributes
+7. We can change the value of attributes
+
+document: this object represents the DOM tree structure
+
+Note: We need to get the object of that element on which operation has to be performed 
+
+How to get object of html elements in js?
+
+JS has certain predefined functions, which are used to get the object reference of the elements 
+
+var myObj = document.getElementById(id) -> returns single element
+
+var elements = document.getElementsByClassName("container") -> returns multiple elements
+
+var elements = document.getElementsByTagName("div"); -> returns multiple elements based on tag name
+
+document.querySelector(".container");
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <input type="button" value="Click me" onclick="showAlert()">
+   <script>
+      function showAlert(){
+         alert("button clicked");
+      }
+   </script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <input type="button" value="Click me" id="btn">
+   <script>
+      var myButton = document.getElementById("btn");
+      console.log(myButton);
+      myButton.onclick = () => {
+         alert("Hello World");
+      }
+   </script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <h1 id="heading">Hello World</h1>
+   <input type="button" value="Click me" onclick="operation()">
+   <script>
+      function operation(){
+         var h1Element = document.getElementById("heading"); // give the object of the tag
+         console.log(h1Element); // display the complete element
+         console.log(h1Element.innerHTML); // innerHTML will give the content written inside of the tag 
+      }
+   </script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <h1 id="heading">Hello World</h1>
+   <input type="button" value="Click me" onclick="operation()">
+   <script>
+      function operation(){
+         var h1Element = document.getElementById("heading"); // give the object of the tag
+         console.log(h1Element); // display the complete element
+         h1Element.innerHTML = "This is new content";
+      }
+   </script>
+</body>
+
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <h1 id="heading">Hello World</h1>
+   <input type="button" value="Click me" onclick="operation()">
+   <script>
+      function operation(){
+         var h1Element = document.getElementById("heading"); // give the object of the tag
+         console.log(h1Element); // display the complete element
+         h1Element.remove();
+      }
+   </script>
+</body>
+
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <h1 id="heading">Hello World</h1>
+
+   <div id="container">
+
+   </div>
+
+   <input type="button" value="Click me" onclick="operation()">
+
+   <script>
+      function operation(){
+         var element = document.createElement("h2");
+         element.innerHTML = "This is a new heading";
+         var containerDiv = document.getElementById("container");
+         containerDiv.appendChild(element);
+      }
+   </script>
+</body>
+
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+
+   <a href="https://www.google.com" id="link">Follow this link</a>
+
+   <button onclick="operation()">Change Link</button>
+
+   <script>
+      function operation(){
+         var linkElement = document.getElementById("link");
+         // var value = linkElement.getAttribute("href");
+         // console.log(value);
+         linkElement.setAttribute("href", "https://www.flipkart.com");
+      }
+   </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
