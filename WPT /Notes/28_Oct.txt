@@ -1,0 +1,340 @@
+Prevention of callback hell:
+
+      function sum(a, b) {
+         return new Promise((resolve, reject) => {
+            setTimeout(() => {
+               var c = a + b;
+               if (c) {
+                  resolve(c);
+               }
+               else {
+                  reject("Error: Sum cannot be calculated");
+               }
+
+            }, 1000);
+         });
+      }
+
+      function factorial(n) {
+         return new Promise((resolve, reject) => {
+            setTimeout(() => {
+               if (n) {
+                  var fact = 1;
+                  for (let i = 1; i <= n; i++) {
+                     fact = fact * i;
+                  }
+                  resolve(fact);
+               }
+               else{
+                  reject("Error: Factorial cannot be calculated");
+               }
+            }, 3000);
+         });
+      }
+
+      function square(n) {
+         return new Promise((resolve, reject) => {
+            setTimeout(() => {
+               var sq = n * n;
+               if (sq) {
+                  resolve(sq);
+               }
+               else {
+                  reject("Error: Square cannot be calculated");
+               }
+            }, 1500);
+         });
+      }
+      
+      sum(2,3)
+      .then((sumResult)=>{
+         console.log("sum is ",sumResult);
+         return factorial(sumResult);
+      })
+      .then((factResult)=>{
+         console.log("factorial is ",factResult);
+         return square(factResult);
+      })
+      .then((sqResult)=>{
+         console.log("square is ",sqResult);
+      })
+      .catch((error)=>{
+         console.log(error);
+      });
+
+
+
+
+1. fetch user ids from server 101 102 103 104 105 106 -> 3 sec
+2. fetch data based on id name, phone, email, age, address 1.5 sec
+3. based on the age, decide if user can vote or not 1 sec
+
+
+function fetchIds() {
+         return new Promise((resolve, reject) => {
+            setTimeout(() => {
+               var ids = [101, 102, 103, 104, 105];
+               if (ids) {
+                  resolve(ids);
+               }
+               else {
+                  reject('Error fetching ids');
+               }
+            }, 3000);
+         });
+      }
+
+      function fetchDataById(id) {
+         return new Promise((resolve, reject) => {
+            setTimeout(() => {
+               var data = {
+                  id,
+                  name: 'NodeJs Sharma',
+                  age: 12,
+                  email: 'john.doe@example.com'
+               };
+               if (data) {
+                  resolve(data);
+               }
+               else {
+                  reject('Error fetching data for id ' + id);
+               }
+            }, 1500);
+         })
+      }
+
+      function checkEligibility(age) {
+         return new Promise((resolve, reject) => {
+            setTimeout(() => {
+               if (age >= 18) {
+                  resolve("User is eligible for voting");
+               }
+               else{
+                  reject("Tu to bacchha hai");
+               }
+            }, 1000);
+
+         });
+      }
+
+      fetchIds()
+      .then((idsArray)=>{
+         console.log("Fetched Ids are",idsArray);
+         return fetchDataById(idsArray[2]);
+      })
+      .then((userData)=>{
+         console.log("User data is",userData);
+         return checkEligibility(userData.age);
+      })
+      .then((message)=>{
+         console.log(message);
+      })
+      .catch((error)=>{
+         console.log(error);
+      });
+
+
+JS has introduced a new way to handle the promises
+1. then() catch()
+2. async await keywords
+
+async & await:
+
+try{
+
+}
+catch(error){
+
+}
+
+For handling of the promise with the help of async & await keyword 
+try catch block is mandatory
+Another rule is, we must write a function to contain the promise handling code with async & await 
+
+await : make sure that rest of the statements has to wait for current statement to be executed completely
+if promise is getting resolved, then await statement will return resolved value
+
+async: if any function definition is having await keyword in its body, then async keyword must be there on its signature
+The function in which we have made the code synchronous with the help of await keyword, so that function itself should be executed as asynchronous relatively with other function 
+
+Babel
+
+ 
+
+async function handlePromise(){
+
+	try{
+		const sumResult = await sum(2,3);
+		console.log();
+		const factResult = await factorial(sumResult);
+	
+		const sqResult = await square(factResult);
+	}
+	catch(error){
+		console.log(error);
+	}
+
+}
+
+
+Promise:
+
+Steps for working with Promise:
+
+1. Create a new Promise object, then write logic into it, based on the task we have to resolve or reject the promise and its mandatory because if we don't resolve or reject then promise will remain in pending state
+
+Promise will have 3 states:
+1. Pending
+2. Resolved/fulfilled
+3. Rejected
+
+
+2. Execute the promised task 
+
+3. Handle the promise : Based on the promise state, we can take certain actions
+
+To handle the promise JS has given two functions:
+a. then()
+b. catch()
+
+
+const myPromise = new Promise((resolve,reject)=>{
+	
+	s1
+	s2
+	s3
+	s4
+	if(succeeded){
+		resolve();
+	}
+	else{
+		reject();
+	}
+	
+
+});
+
+
+
+eg:
+check if any given number is even or odd
+based on the type of number we have to perform a different 
+if number is even: fetch data from server
+if number is odd: save data on a server
+
+
+var n = 5;
+
+if(n%2==0){
+   ... statements to fetch data from server
+}
+else{
+	... statements to save data on server
+}
+
+check for even/odd
+business logic 
+
+
+var n = 8;
+
+const evenPromise = new Promise((resolve,reject)=>{
+	if(n%2 === 0){
+		resolve();
+	}
+	else{
+		reject();
+	}
+});
+
+
+To handle the promise we should call then & catch functions on Promise object 
+
+evenPromise
+.then(()=>{
+	console.log("fetching data from server");
+})
+.catch(()=>{
+	console.log("save data on a server");
+
+});
+
+
+const n = 7;
+      const evenPromise = new Promise((resolve,reject)=>{
+         if(n%2===0){
+            resolve();
+         }
+         else{
+            reject();
+         }
+      });
+      evenPromise.then(()=>{
+         console.log("No. is even & fetching data from server");
+      }).catch(()=>{
+         console.log("No. is odd & saving data on server");
+      });
+
+
+
+const n = 7;
+      const evenPromise = new Promise((resolve,reject)=>{
+         var data = [10,20,30,40];
+         if(n%2===0){
+            resolve(data);
+         }
+         else{
+            const error = new Error("No. not divisible by 2");
+            reject(error);
+         }
+      });
+      evenPromise.then((result)=>{
+         console.log(result);
+         console.log("No. is even & fetching data from server");
+      }).catch((obj)=>{
+         console.log(obj);
+         console.log("No. is odd & saving data on server");
+      });
+
+      function checkEvenPromise(n) {
+         const evenPromise = new Promise((resolve, reject) => {
+            var data = [10, 20, 30, 40];
+            if (n % 2 === 0) {
+               resolve(data);
+            }
+            else {
+               const error = new Error("No. not divisible by 2");
+               reject(error);
+            }
+         });
+         return evenPromise;
+      }
+
+      const obj = checkEvenPromise(4);
+      obj.then((result) => {
+         console.log(result);
+         console.log("No. is even & fetching data from server");
+      }).catch((obj) => {
+         console.log(obj);
+         console.log("No. is odd & saving data on server");
+      });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
