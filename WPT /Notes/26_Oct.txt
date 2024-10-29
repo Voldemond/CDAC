@@ -1,0 +1,322 @@
+array: filter: it will filter the elements based on user defined conditions,
+map: if we want to get a new array by updating each and every element of the current array
+
+var arr = [10,20,30,40,50];
+
+var rs= [12,22,32,42,52];
+
+
+var arr = [10,20,30,40,50];
+
+      var newArr = arr.map(value=>value+2);
+
+      console.log(newArr);
+
+foreach: it will do traversing on the array and in each iteration it will give you each element of array one by one
+
+var arr = [10,20,30,40,50];
+
+      arr.forEach((value)=>{
+         console.log(value);
+      });
+
+
+var a1 = [10,20,30,40,50];
+
+      var a2 = [11,12,13,14];
+
+      var a3 = a1.concat(a2);
+
+      console.log(a3);
+
+
+In JS one exclusive operator is there i.e. spread operator: it is used to spread/unbox the elements of an array into another array
+spread operator works for json objects also
+...
+
+
+var a1 = [10,20,30,40,50];
+
+      var a2 = [11,12,13,14];
+
+      var a3 = [...a1,...a2];
+
+      console.log(a3);
+
+
+var studentName = "Ankit";
+
+      var obj = {name:studentName,marks:56};
+      console.log(obj);
+
+
+var studentName = "Ankit";
+      var studentMarks = 56;
+
+      var obj = {studentName,studentMarks};
+      
+      console.log(obj);
+
+
+in above case the variable name itself will be treated as key name 
+var o1 = {
+         name:"Suresh",
+         age: 25
+      };
+
+      var o2 = {
+         email:"suresh@mail.com",
+         phone:"9991111"
+      }
+
+      var o3 ={...o1,...o2};
+      console.log(o3);
+
+We can also consider a variable's value as the key name:
+
+var x = "studentName";
+
+      var obj ={
+	[x]:"Mohit"
+	}
+      
+      console.log(obj);
+
+
+Types of process in JS:
+1. Synchronous: blocking nature, till the first task is not completed, the next task will not be started 
+next task has to wait to start its execution until the first one has completed its job 
+
+function sum(){
+
+}
+function power(){
+
+}
+function factorial(){
+
+}
+
+const s = sum(2,3); -> 1 sec
+const f = factorial(s); -> 3 sec
+const c = power(f,3); -> 2 sec
+in above case there is dependency, power->factorial->sum 
+for the above case we must go with synchronous approach 
+
+const s = sum(2,3); -> 1 sec
+const f = factorial(7); -> 3 sec
+const c = power(8,3); -> 2 sec
+
+myfunc()-> 0.5 s
+
+2. Asynchronous : non blocking nature 
+
+
+with the help of callback functions we can make any task asynchronous 
+
+
+setTimeout(callback,milli-seconds,arguments for callback);()=>{} 4s
+
+s1
+s2
+s3
+s4
+
+this function will delay the execution of any task by mentioned amount of time 
+callback functions never getting called immediately when we pass them into argument 
+
+
+setTimeout((arg)=>{
+         console.log(arg);
+      },2000,"bye");
+
+      console.log("After setTimeout");
+
+
+
+
+function sum(a,b){
+         var c = a + b;
+         console.log("sum is ",c);
+      }
+
+      function cube(n){
+         console.log("cube is ",n*n*n);
+      }
+
+      setTimeout(cube,2000,6);
+      setTimeout(sum,1000,2,3);
+
+      console.log("After all the operations");
+
+
+use case:
+if multiple async operations are there, but we want to execute them synchronously
+then we have to go in nested of the callback function
+
+setTimeout((a,b)=>{
+
+         var c = a + b;
+         console.log("sum is ",c);
+
+         setTimeout(()=>{
+            console.log("cube is ",c*c*c);
+         },1000);
+
+      },2000,2,3);
+
+
+
+
+
+sum 1sec setTimeout -> factorial 3 sec setTimeout -> power 1.5 setTimeout
+
+setTimeout()
+setTimeout()
+setTimeout()
+
+
+insertData(data,(success,error)=>{
+	write code for response
+})
+
+
+console.log("calculating sum...");
+      setTimeout((a,b) => {
+         
+         var c = a+b;
+         console.log("sum is ",c);
+
+         console.log("calculating factorial...");
+         setTimeout(()=>{
+            var f = 1;
+            for(var i =1;i<=c;i++){
+               f=f*i;
+            }
+            console.log("factorial is ",f);
+
+            console.log("calculating square...");
+            setTimeout(() => {
+               var p = f*f;
+               console.log("square is ",p);
+            }, 1500);
+
+         },3000);
+
+      }, 1000, 2,3);
+
+nesting of callback functions is callback hell
+
+We should always avoid callback hell
+ why?
+1. bad readability
+2. maintenance of the code will become difficult
+
+Promise:
+Promise in JS used to work same as of real life 
+
+
+For any of the task first create a promise 
+
+Then till the task has not executed, we can say promise is neither fulfilled nor rejected 
+but it will remain in the pending state 
+
+Now the promised task will be executed
+and once the execution has been done, then Promise will either fulfill or rejected
+in case of successful execution of taks: fulfilled
+in case of failure/error: rejected
+
+Now next on the basis of promise state we have to take several actions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
