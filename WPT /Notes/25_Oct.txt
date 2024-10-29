@@ -1,0 +1,322 @@
+functions:
+
+factorial: 8 lines 
+
+Home.html <script>8 lines </script>
+
+function definition: factorial {
+
+	8 lines 
+}
+.
+.
+.
+.
+factorial(5)
+.
+.
+.
+.
+factorial(7)
+
+function is a collection of statements those are grouped together 
+function prevents code duplicacy
+function provides code reusability, modularity
+
+
+return-type name(arguments){
+
+}
+
+int sum(int a,int b){
+	return a+b;
+}
+
+function name(arguments){
+	body
+	return statement
+}
+
+function sum(a,b){
+	return a+b;
+}
+
+
+function sum(a, b) {
+         return a + b;
+      }
+      c = sum(4,6);
+      console.log(c);
+
+
+function max(a,b){
+         if(a>b){
+            return a;
+         }
+         else{
+            return b;
+         }
+      }
+
+      c = max(6,20);
+      console.log(c);
+
+
+keywords to declare a variable:
+
+var, let, const
+
+var a=5;
+let b=6;
+const c = 7;
+
+
+function show(){
+         a=5;
+         console.log("inside show a=",a);
+      }
+      show();
+      console.log("outside show a=",a);
+
+note: if any variable is declared without var,let, const keywords then that variable will always have global scope. Because without var,let, const keywords variables are referred on the window object 
+
+var keyword:
+variables declared using var keyword will get either local or global scope specifically
+
+function show(){
+         var a=5;
+         console.log("inside show a=",a);
+      }
+      show();
+      console.log("outside show a=",a); // a is not accessible here 
+
+We can re-declare a variable using var keyword 
+
+var a=5;
+      console.log(a);
+      var a=8;
+      console.log(a); 
+
+Hoisting: 
+console.log(a); // undefined but no error 
+var a=5;
+
+whenever browser loads the js code so before execution, js engine reads the complete code 
+and will place/move all the variable declarations(not assignment) and function definitions at the top of the code, this process is known as hoisting 
+
+but inside js engine:
+var a;
+console.log(a); // undefined 
+a=5;
+
+let keyword:
+let variables are block scoped 
+function demo(){
+         if(true){
+            let x = 8;
+            console.log("inside if x=",x)
+         }
+         console.log("outside if x=",x) // error: x is not defined
+      }
+      demo();
+
+we can't re-declare a variable with let keyword
+
+Cannot access let variable before initialization
+
+const keyword:
+exactly same as let keyword
+but 1 difference is there, that we can't change its value
+
+For JS, a function is also an object
+
+var str = "Hello";
+
+var arr = [10,20,30];
+
+var myFun = function show(){
+	,
+,
+,
+,
+,
+}
+
+console.log(myFun);
+
+var myFun = function(){
+         console.log("function called");
+      }
+      console.log(myFun);
+      console.log(typeof myFun);
+      myFun();
+
+a function without a name is anonymous function 
+
+Callback function: a function that is passed as an argument 
+
+example:
+
+function show(a) {
+         console.log(a);
+      }
+
+      show(function demo(){
+         console.log("inside demo()");
+      });
+
+in above code demo is the callback function 
+
+function show(a) {
+         console.log(a);
+         a();
+      }
+
+      function demo(){
+         console.log("inside demo()");
+      }
+      show(demo); 
+
+
+
+
+function show(a) {
+         console.log(a);
+         var rs = a();
+         console.log(rs);
+      }
+
+      function demo(){
+         console.log("inside demo()");
+         return 5;
+      }
+      
+      show(demo); 
+
+
+
+function show(a) {
+         console.log(a);
+         var rs = a();
+         console.log(rs);
+      }
+
+      // i am not going to use demo function outside of the function show 
+     show(function(){
+         console.log("inside demo()");
+         return 6;
+     });
+     
+     // if in a function call, we are passing the entire definition then name of the callback function is not necessary 
+     // we can pass anonymous function as a callback function
+     
+
+Types of syntax for defining any function:
+1. function keyword: function name(arguments){}
+2. fat arrow function: (arguments)=>{}
+
+ const sum = (a,b)=>a+b;
+      const c = sum(4,6);
+      console.log(c);
+
+const sum = (a,b)=>{
+         return a+b;
+      }
+      const c = sum(4,6);
+      console.log(c);
+
+
+const sum = a => a+5;
+      const c = sum(10);
+      console.log(c);
+
+var arr = [10,9,11,12,8,78,3,5,6];
+      
+      var evenArr = arr.filter(element=>element%2===0);  // filter function will filter the given array based on the condition and it will return the filtered array
+
+
+      console.log(evenArr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
