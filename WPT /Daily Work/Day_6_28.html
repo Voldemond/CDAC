@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Example</title>
+</head>
+<body>
+    <script>
+        // function sum(a,b){
+        //     return new Promise((resolve,reject)=>{
+        //         setTimeout(()=>{
+        //             var c = a+ b ; 
+        //             if(c){
+        //                 resolve(c);
+        //             }
+        //             else{
+        //                 reject("Error : sum cannot be calculated ")
+        //             }
+        //         },1000);
+        //     });
+        // }
+        // function square(n) {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             if (typeof n === 'number') {
+        //                 resolve(n * n);
+        //             } else {
+        //                 reject("Error: input must be a number");
+        //             }
+        //         }, 1000);
+        //     });
+        // }
+        // function factorial(n){
+
+        // }
+        // function power(n,p) {
+            
+        // }
+        // sum(2, 3).then((sumResult) => {
+        //     console.log("Sum is:", sumResult);
+        // }).catch((error) => {
+        //     console.error(error);
+        // });
+        // const numberToSquare = 4; // Change this to any number you want to square
+        // square(numberToSquare).then((sqResult) => {
+        //     console.log("Square is:", sqResult);
+        // }).catch((error) => {
+        //     console.log(error);
+        // });
+
+            function fetchIds() {
+                return new Promise((resolve, reject)=>{
+                    setTimeout(() => {
+                        var ids= [101 , 102 , 103 , 104 , 105 ]; 
+                        if(ids){
+                            resolve(ids); 
+                        }
+                    }, 3000);
+                })
+            }
+
+    </script>
+</body>
+</html>
