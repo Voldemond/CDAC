@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 1 </title>
+</head>
+<body>
+    <h3>1. Shopping Cart Application </h3>
+    <script>
+        console.log("Q1");
+        const tax_rate = 0.08 ;
+        let totalprice = 0 ;
+
+        function additem(price){
+            totalprice += price *(1+ tax_rate);
+        }
+        additem(100); 
+        additem(200);
+        console.log(`Total price: $${totalprice}`);
+
+    </script>
+    <h3>2. Calculate Area of Rectangle</h3>
+    <script>
+        console.log("Q2.1 with regular function")
+        function calculatearea(length , width){
+            return length * width;
+        }
+        const calculateareaarrow = (length, width) => length * width ;
+        console.log(calculatearea(5,4));
+        console.log("Q2.2 With arrow function")
+        console.log(calculateareaarrow(5,4));
+    </script>
+     <h3>3. Book Object with Method </h3>
+     <script>
+        console.log("Q3")
+        const book = {
+            title: "Shamchi Aai",
+            author: "Pandurang Sadashiv Sane", 
+            yearpublished : 2000 , 
+            display(){
+                console.log(`Title: ${this.title}, Author:${this.author},Year: ${this.yearpublished}`);
+            }
+        };
+        book.display();
+     </script>
+     <h3>4. Object Destructing with Car</h3>
+     <script>
+        console.log("Q4")
+        const car = {make: "Nexa", model:"S-cross",year:2021};
+        const {make , model , year } = car ; 
+        console.log(make , model , year ); 
+     </script>
+     <h3>5. Array Destructing</h3>
+     <script>
+        console.log("Q5");
+        const numbers = [1 , 2 , 3 ,4 ,5 ];
+        const [first, second ] = numbers ; 
+        console.log(first , second );
+     </script>
+     <h3>6. Map to Find Name Lengths </h3>
+     <script>
+        console.log("Q6");
+        const names = ["Kunal" , "Aaditya " , "Aniket ", "Shreya"];
+        const namelength = names.map(name => name.length);
+        console.log(namelength);
+     </script>
+     <h3>7. Filter Even Numbers</h3>
+     <script>
+        console.log("Q7"); 
+        const numbers1 = [ 1, 2 , 3 ,4 , 5 , 6 ,7 ,  8]; 
+        const evennumbers = numbers1.filter(num => num % 2 === 0 );
+        console.log(evennumbers);
+     </script>
+     <h3>8. Reduce to find Total Price </h3>
+        <script>
+            console.log("Q8");
+            const cart = [ 19 , 20 , 21 ];
+            const totiprice = cart.reduce((acc , price )=> acc + price , 0 ); 
+            console.log(totiprice);
+        </script>
+
+    <h3>9. Sum using Rest Operator</h3>
+    <script>
+        console.log("Q9");
+        function sum(...args)  {
+
+            return args.reduce((acc, num )=> acc + num , 0 ); 
+
+        }
+        console.log(sum(1,3,4,5,6));
+    </script>
+    <h3>10. Merge array with Spread operator </h3>
+    <script>
+        console.log("10");
+
+        const nu = [ "banana ", "apple ", "pineapple"];
+        const uu = [ "kiwi " , "mango ", "graphes "]; 
+
+        const all = [...nu , ...uu]; 
+        console.log(all)
+    </script>
+
+    <h3>11. Accept callback and Execute after Delay </h3>
+    <script>
+        // console.log("Q11");
+        function executedelay(callback){
+            setTimeout(callback , 2000);
+        }
+        executedelay(()=> console.log("Q11. This Statement Executed after 2 Seconds "));
+    </script>
+    <h3>12. Promise with Delay </h3>
+    <script>
+        // console.log("Q12");
+        const delaypromise = new Promise(resolve =>{
+            setTimeout(() => resolve("Q12. Resolved after 3 seconds "), 3000);
+        });
+        delaypromise.then(mu => console.log(mu));
+    </script>
+    <h3>13. Closure Example</h3>
+    <script>
+        // console.log("Q13")
+        function cm(factor){
+            return function(numb){
+                return numb * factor ; 
+            }; 
+        }
+        const double = cm(2);
+        setTimeout(() => {
+            console.log("Q13.");
+            console.log(double(5));
+        }, 4000);
+        
+    </script>
+        <h3>14. Async/Await fetch Example</h3>
+        <script>
+            console.log("Q14");
+    
+            async function fetchd() {
+                const response2 = await fetch("https://www.google.com");
+        const data = await response2.json(); 
+        console.log(data);
+    }
+    fetchd();
+        </script>
+    <h3>15. Filter , Map and Reduce Combination </h3>
+    <script>
+        // console.log("Q15")
+        function processno(numbe){
+            return numbe
+            .filter(n => n % 2 === 0 )
+            .map(n => n * 2 )
+            .reduce ((acc , n )=> acc + n , 0)  ;
+        }
+        setTimeout(() => {
+            console.log("Q15. ")
+            console.log(processno([1, 2 ,3 ,4 ,5 ,6 ]));
+        }, 5000); 
+    </script>
+</body>
+</html>
