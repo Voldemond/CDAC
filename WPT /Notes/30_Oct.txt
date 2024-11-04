@@ -1,0 +1,189 @@
+tbody -> append tr -> append td
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <button onclick="populateTable()">Fetch Data</button>
+   <table border="1" cellpadding="10" cellspacing="0">
+      <thead>
+         <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Phone</th>
+         </tr>
+      </thead>
+      <tbody id="row-container">
+        
+      </tbody>
+   </table>
+
+   <script>
+      function populateTable(){
+         var usersData = [
+            {id:111,name:'Sohan',age:24,gender:'male',phone:"99881111"},
+            {id:112,name:'Suresh',age:22,gender:'male',phone:"7700011"},
+            {id:113,name:'Priya',age:27,gender:'female',phone:"8800111"},
+            {id:114,name:'Jignesh',age:26,gender:'male',phone:"999999"},
+            {id:115,name:'Roshni',age:25,gender:'female',phone:"998855555"}
+         ]
+         usersData.forEach((user)=>{
+
+            const {id,name,age,gender,phone} = user;
+
+            var tableRow = document.createElement('tr');
+
+            var idColumn = document.createElement('td');
+            var nameColumn = document.createElement('td');
+            var ageColumn = document.createElement('td');
+            var genderColumn = document.createElement('td');
+            var phoneColumn = document.createElement('td');
+
+            idColumn.innerHTML = id;
+            nameColumn.innerHTML = name;
+            ageColumn.innerHTML = age;
+            genderColumn.innerHTML = gender;
+            phoneColumn.innerHTML = phone;
+
+            tableRow.appendChild(idColumn);
+            tableRow.appendChild(nameColumn);
+            tableRow.appendChild(ageColumn);
+            tableRow.appendChild(genderColumn);
+            tableRow.appendChild(phoneColumn);
+
+            document.getElementById('row-container').appendChild(tableRow);
+
+         });
+      }
+   </script>
+
+</body>
+</html>
+
+
+
+Bootstrap:
+UI library that will make a page responsive
+
+Responsive: A page that will adjust its layout according to the size of screen
+
+without bootstrap it is possible to make a page responsive, but for that we need to write a large amount of css media queries
+
+In bootstrap lots of media query is already written, it also provides few ui components 
+
+How bs makes our page responsive:
+
+Bootstraps breaks down the entire width into 12 equal sections/grids/columns
+Grid System
+
+Bootstrap css provides already created class selectors, we just have to apply those classes onto the html elements 
+
+<div class="row">
+	<div class="col-4"></div>
+	<div class="col-8"></div>
+</div>
+
+class "col" will assign the equal amount of width to all the divs 
+
+col-n
+n-> 1 to 12
+col-1, col-2, col-3, col-4
+
+
+
+Jquery: it is library built on the top of js, jquery ease out the js development by providing predefined functions
+
+
+$(selector)
+var y = $("#heading");
+
+onclick -> click()
+onkeyup -> keyup()
+
+$(selector).event-name(()=>{
+
+});
+
+id="btn"
+
+$("#btn").click(()=>{
+	alert("Hello");
+});
+
+document -> ready event
+
+$(document).ready(()=>{
+
+});
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <button id="btn">Click</button>
+   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+   <script>
+      $(document).ready(()=>{
+         $("#btn").click(()=>{
+            alert("Hello Jquery");
+         });
+      });
+   </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1 id="content">This is content</h1>
+   <button id="hide-btn">Hide</button>
+   <button id="show-btn">Show</button>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script>
+      $(document).ready(()=>{
+         $("#hide-btn").click(()=>{
+            $("#content").fadeOut(1000);
+         });
+         $("#show-btn").click(()=>{
+            $("#content").fadeIn(1000);
+         });
+      });
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
