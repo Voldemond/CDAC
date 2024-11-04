@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section_2</title>
+</head>
+<body>
+    <script >
+        // 1. Variables
+const MAX_EXPENSE = 1000;
+let totalExpense = 0;
+var expenseList = [];
+
+// 2. Functions and Arrow Functions
+function addExpense(description, amount, date) {
+    const expense = { description, amount, date };
+    expenseList = [...expenseList, expense];
+    totalExpense += amount;
+    showMessage(() => console.log("Expense Added Successfully"));
+}
+
+const calculateTotalExpense = () => {
+    return expenseList.reduce((acc, expense) => acc + expense.amount, 0);
+};
+
+// 3. JavaScript Objects
+const exampleExpense = {
+    description: "Lunch",
+    amount: 15,
+    date: new Date().toLocaleDateString()
+};
+
+// 4. Destructuring
+function displayExpense({ description, amount, date }) {
+    console.log(`Description: ${description}, Amount: $${amount}, Date: ${date}`);
+}
+
+// 5. Array Methods (Map, Filter, Reduce)
+const expenseDescriptions = expenseList.map(expense => expense.description);
+const highExpenses = expenseList.filter(expense => expense.amount > 20);
+const totalExpenses = expenseList.reduce((acc, expense) => acc + expense.amount, 0);
+
+// 6. Rest and Spread Operator
+function addMultipleExpenses(...expenses) {
+    expenseList = [...expenseList, ...expenses];
+    expenses.forEach(expense => (totalExpense += expense.amount));
+}
+
+// 7. Callback Functions
+function showMessage(callback) {
+    callback();
+}
+
+// 8. Promises
+function fetchExpenses() {
+    return new Promise((resolve) => {
+        setTimeout(() => resolve([
+            { description: "Groceries", amount: 50, date: "2023-05-01" },
+            { description: "Utilities", amount: 100, date: "2023-05-02" }
+        ]), 2000);
+    });
+}
+
+fetchExpenses().then(expenses => {
+    expenseList = expenses;
+    expenses.forEach(expense => totalExpense += expense.amount);
+    console.log("Initial expenses fetched:", expenseList);
+});
+
+// 9. Closures
+function createExpenseTracker() {
+    let total = 0;
+    return function addExpenseToTotal(amount) {
+        total += amount;
+        return total;
+    };
+}
+const trackTotal = createExpenseTracker();
+
+// 10. Async/Await
+async function loadInitialExpenses() {
+    const expenses = await fetchExpenses();
+    expenseList = expenses;
+    expenses.forEach(expense => totalExpense += expense.amount);
+    console.log("Initial expenses:", expenseList);
+}
+
+loadInitialExpenses();
+
+    </script>
+</body>
+</html>
+
