@@ -1,0 +1,8 @@
+dynamic response from server to client 
+
+a servelet want to sent a response to client 
+we will be using 
+
+webcontainer 
+
+deployment instructions revision to webcontainer or servelet 
