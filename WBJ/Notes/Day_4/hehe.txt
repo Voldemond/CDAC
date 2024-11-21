@@ -1,0 +1,22 @@
+prg post redirect gate 
+
+voter registration 
+
+admin flow 
+
+fullstack project for rest api session storage or 
+
+session is a great tool for sharing the attributes or data among the pages 
+
+assingment : must complete voter registration 
+
+
+
+Day 4
+1. import day4.1.
+Edit DB password.
+Revise flow n complete logout page.
+1.5 MUST Complete
+Voter registration
+2. Hands on
+Discuss n design admin flow. Complete as much as possible.
