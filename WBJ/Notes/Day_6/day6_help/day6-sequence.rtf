@@ -1,0 +1,205 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+{\colortbl ;\red255\green0\blue0;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs28\lang9 Today's topics\par
+Revise JSP Basics (Life cycle n API) - \cf1 thread pool\cf0\par
+JSP Directives\par
+JSP Actions\par
+JSP-JavaBean-DAO(using DBUtils)-Entities - DB\par
+0. JSP Comments\par
+<%-- comment --%>\par
+<!-- comment2 -->\par
+ \par
+ 1. \b JSP Scripting elements n Implicit objects\b0\par
+\b 2. page vs pageContext vs pageScope\b0\par
+page - JSP implicit object (accessible from scriptlets n expressions)\par
+Represents translated page class instance !\par
+eg : For index.jsp -> index_jsp - instance of this class\par
+pageContext - instance of PageContext\par
+Holds (HAS-A) - other implicit objects'\par
+eg - getSession , getRequest , getResponse....\par
++\par
+map of page scoped attributes : pageScope\par
+page n pageContext are accessible from scriptlets n expression\par
+pageScope - accessbile via EL syntax only !\par
+It's a map of page scope attributes(created by WC)\par
+3. \b Identify JSP Directives n  important attributes\b0\par
+page\par
+include\par
+4. \b JSP Actions \b0\par
+4.1  Request dispatcher related\par
+<jsp:forward> , <jsp:include> , <jsp:param>\par
+4.2 JSP using JavaBean related standard actions\par
+Layers - JSP -Java Bean - JDBC based DAO (dependency - DB connection - provider - DBUtils)  - Entities|Model|POJOs - RDBMS\par
+Servlet - to manage DB connection(openConneciton n closeConnection)\par
+Objective : User login in online voting\par
+We have already solved it using servlets . Right ?\par
+So why now , JSP  Using Java Beans\par
+For separation of concerns(=tasks/responsibilities)\par
+We are going to separate :\par
+1.  P.L (presentation logic) , navigation in a JSP \par
+(w/o using java code)\par
+2. B.L (Business logic) : separated in a java class : java bean \par
+\b Why Java beans ?\par
+\b0 1. Separation between business logic n managing DAOs - java bean class\par
+ n presentation logic(JSP)\par
+2. re usability\par
+3. WC can automatically parse request parameters (string) -> primitive types. \par
+ What is a java bean ?\par
+Java class containing B.L (equivalent to service layer in spring)\par
+Server side attribute , created by WC , to be added under required scope\par
+(page | request | session | application)\par
+Start case study : Voting case study  (admin role)\par
+1. Copy the layers -\par
+Tables, POJOs, DAOs , DBUtils\par
+2. Add a Servlet -\par
+to open n close DB connection.\par
+3. Add JSP/s with standard Actions to manage java beans \par
+3.1 Create Java bean \par
+<jsp:useBean id="bean ID" class="Fully qualified java bean class  name" scope="page|request|session|application"/>\par
+Default scope=page\par
+eg - <jsp:useBean id="user_bean" class="com.app.beans.UserBean"   scope="session"/>\par
+Internals (What will WC invoke?)\par
+refer to a digram\par
+WC - session.getAttribute("user_bean") - for the 1st time -\par
+rets null => bean doesn't exist \par
+WC creates it n adds it under the specified scope\par
+session.setAtrribute("user_bean",new UserBean());\par
+3.2  Data binding  from view layer ---> model (java bean)\par
+i.e calling the setters of Javabean properties.\par
+<jsp:setProperty name="bean id | attribute name" property="*"/>\par
+eg : <jsp:setProperty name="user_bean" property="*"/>\par
+WC - session.getAttribute("user_bean") - Java bean reference , invlokes ALL MATCHING setters.\par
+Request param names MUST match with Java bean's property names.\par
+3.3 <jsp:getProperty name="bean id | attribute name" property="propertyName"/>\par
+WC invokes a getter from the Java bean.\par
+\par
+3.4 To invoke B.L method of java bean , use EL syntax.\par
+eg - Suppose B.L method in Java bean\par
+public String autheticateUser() \par
+\{.....\}\par
+How will you invoke it using EL syntax ?\par
+$\{sessionScope.user_bean.autheticateUser()\}\par
+Java - session.getAttribute("user_bean").autheticateUser() -> sent to clnt \par
+4. Java bean invokes Dao's method\par
+Results are sent from DAO --> Java Bean -> JSP\par
+5. If required , Navigate clnt to the next page in the SAME request(server pull : forward) OR in the NEXT request  - client pull (redirect)\par
+6. Send the response to the web client.\par
+7. Any problems observed with server pull(RD's forward scenario)  \par
+\b Multiple submission issue\par
+\b0 Why ? Client is navigated to the next page , in the SAME request \par
+Can result into increased DB traffic or even worse --dup records \par
+eg dup orders.\par
+What's the solution ? Double/multiple submit guard\par
+Design Pattern : PRG (Post--Redirect--Get)\par
+Replace server pull by client pull \par
+(i.e replace RD's forward by sendRedirect)\par
+BUT There exists NO JSP standard action for redirect.\par
+So instead of using scriptlelts , use JSTL\par
+(JSP Standard Tag library)\par
+What is it ?\par
+It's a part of Java EE specifications.\par
+Implementation is left to vendors.\par
+BUT Tomcat - doesn't supply implementation.\par
+So needs to add , dependency \par
+jstl1.2.jar\par
+8. Enter JSTL\par
+Import JSTL core tag lib n use tag.\par
+Steps\par
+1. Copy/confirm jstl1.2.jar under <tomcat> / lib OR <WEB-INF>/lib\par
+(Already done in the supplied Tomcat server)\par
+2. Import JSTL supplied core tag lib\par
+<%@ taglib uri="{{\field{\*\fldinst{HYPERLINK http://java.sun.com/jsp/jstl/core }}{\fldrslt{http://java.sun.com/jsp/jstl/core\ul0\cf0}}}}\f0\fs28 " prefix="c"%>\par
+3. Use the JSTL core tags\par
+<c:redirect url="next page URL/redirect location"/>\par
+Performs redirect + URL encoding (to add JSESSIONID in the URL itself)\par
+Equivalent Java code -(response.sendRedirect(response.encodeRedirectURL(url));\par
+\b More Details with example \par
+\b0 eg : In one.jsp : \par
+<c:redirect url="two.jsp"/>\par
+WC : response.sendRedirect(response.encodeRedirectURL("two.jsp"));\par
+If cookies are enabled ,WC sends location  : two.jsp\par
+OR\par
+If cookies are disabled , WC sends resp :   two.jsp;jsessionid=tgret45645654hfdhgf\par
+\par
+Other JSTL Tags from core tag library\par
+\par
+1. Setting an attribute , under required scope\par
+<c:set var="abc" value="$\{param.name\}" scope="session"/>\par
+WC : session.setAttribute("abc",request.getParameter("name"));\par
+\par
+eg - 1. <c:set var="abc" value="$\{param.name\}" />\par
+WC : pageContext.setAttribute("abc",request.getParameter("name"));\par
+2.  Removing an attribute , from  given  scope\par
+<c:remove var="abc"  scope="session"/>\par
+WC : session.removeAttribute("abc") (equivalent to Map's remove)\par
+3. <c:set var="abc" value="$\{param.name\}"/>\par
+WC : pageContext.setAttribute("abc",request.getParameter("name"));\par
+4. For conditional testing -\par
+<c:if test="boolean value">\par
+ will be invoked in case of true \par
+</c:if>\par
+eg : In HTML form \par
+<input type="submit" name="btn" value="Withdraw">\par
+<input type="submit" name="btn" value="Deposit">\par
+In transactions.jsp\par
+<c:if test="$\{param.btn eq 'Withdraw'\}">\par
+ In withdraw \par
+</c:if>\par
+WC : \par
+if(request.getParameter("btn").equals("Withdraw")\par
+ out.print("in withdraw")\par
+Use case : voter login --success -not yet voted --list.jsp ---status.jsp\par
+voter login --success -alrdy  voted ----status.jsp\par
+\par
+status.jsp : after casting a vote => increment votes n change voting status\par
+directly : u have alrdy voted => no action --display a message\par
+eg : \par
+<c:if test="$\{sessionScope.voter.status\}">\par
+ You have alrdy voted....\par
+</c:if>\par
+5. For switch-case \par
+<c:choose>\par
+<c:when test="boolean">\par
+</c:when>\par
+<c:when test="boolean">\par
+</c:when>\par
+<c:when test="boolean">\par
+</c:when>\par
+<c:otherwise>\par
+</c:otherwise>\par
+</c:choose>\par
+eg - \par
+<c:choose>\par
+ <c:when test="$\{param.btn eq 'Withdraw'\}">\par
+ In withdraw \par
+ </c:when>\par
+ <c:when test="$\{param.btn eq 'Deposit'\}">\par
+In Deposit\par
+ </c:when>\par
+ <c:otherwise>\par
+ some other btn ......\par
+ </c:otherwise>\par
+</c:choose>\par
+\par
+URL :  \par
+{{\field{\*\fldinst{HYPERLINK http://host:port/one.jsp?name="Ranjana }}{\fldrslt{http://host:port/one.jsp?name="Ranjana\ul0\cf0}}}}\f0\fs28 "\par
+\par
+In one.jsp\par
+<c:set var="abc" value="$\{param.name\}" scope="session"/> \par
+<c:redirect url="two.jsp"/>\par
+WC : response.sendRedirect(response.encodeRedirectURL("two.jsp"));\par
+\par
+In two.jsp\par
+$\{sessionScope.abc\} : Ranjana  ---Even if cookies are enabled/disabled\par
+\par
+eg : \par
+<c:redirect url="$\{sessionScope.user.validateUser()\}.jsp"/>\par
+\par
+6. Iterator tag\par
+Works as forEach | for\par
+<c:forEach var="loop local attribute" items="Iterable src - List | Set | Map | array |string">\par
+body of for each loop\par
+</c:forEach>\par
+}
+ 
