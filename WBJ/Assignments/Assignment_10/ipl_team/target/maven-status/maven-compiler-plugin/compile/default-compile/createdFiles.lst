@@ -1,0 +1,5 @@
+com\ipl\utils\HibernateUtils.class
+com\ipl\dao\TeamDao.class
+com\ipl\pojos\Team.class
+com\ipl\dao\TeamDaoImpl.class
+com\ipl\testers\TeamTester.class
