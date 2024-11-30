@@ -1,0 +1,11 @@
+com\blogs\pojos\Address.class
+com\blogs\pojos\BaseEntity.class
+com\blogs\controller\HomePageController.class
+com\blogs\pojos\User.class
+com\blogs\pojos\Category.class
+com\blogs\pojos\AdhaarCard.class
+com\blogs\pojos\Tag.class
+com\blogs\pojos\BlogPost.class
+com\blogs\pojos\Comment.class
+com\blogs\controller\TestController.class
+com\blogs\pojos\UserRole.class
