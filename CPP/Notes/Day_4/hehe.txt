@@ -1,0 +1,42 @@
+global variable :       ::  scope resolution operator 
+
+storage classes 
+extern 
+static   
+
+static int Num3 = 400 ; // file scope 
+int a = 200 ; //program scope 
+
+int main(){   // function scope 
+int num2 = 100; 
+
+for(int i=0;i<5;i++) // block Scope 
+
+}
+
+4 scope 
+file scope 
+program scope 
+function scope 
+block scope 
+
+enumuration scope - enum 
+namespace scope --                                      // c sharp 
+
+
+
+
+** Lifetime in c/c++
+Automatic lifetime 
+
+
+this keyword is use to hold the address of the current object 
+
+name mangling  
+method generated from name mangling method , mangling process 
+process of giving name to method overloading method 
+
+it totally depends on the compiler 
+it may vary in naming covention due to changes in compiler 
+g++ , gcc , turbo compiler , 
+
