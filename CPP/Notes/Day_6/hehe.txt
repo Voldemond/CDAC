@@ -1,0 +1,6 @@
+
+Threee magical Exceptions in c++ 
+
+Try 
+catch 
+throw 
