@@ -1,0 +1,7 @@
+D:\DAC\MS .Net\Code\Demo\bin\Debug\Demo.exe.config
+D:\DAC\MS .Net\Code\Demo\bin\Debug\Demo.exe
+D:\DAC\MS .Net\Code\Demo\bin\Debug\Demo.pdb
+D:\DAC\MS .Net\Code\Demo\obj\Debug\Demo.csproj.AssemblyReference.cache
+D:\DAC\MS .Net\Code\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
+D:\DAC\MS .Net\Code\Demo\obj\Debug\Demo.exe
+D:\DAC\MS .Net\Code\Demo\obj\Debug\Demo.pdb
