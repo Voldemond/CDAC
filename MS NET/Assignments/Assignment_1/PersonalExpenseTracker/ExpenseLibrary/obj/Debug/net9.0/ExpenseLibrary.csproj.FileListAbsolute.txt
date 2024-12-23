@@ -1,0 +1,11 @@
+D:\DAC\MS .Net\Day_2\PersonalExpenseTracker\ExpenseLibrary\bin\Debug\net9.0\ExpenseLibrary.deps.json
+D:\DAC\MS .Net\Day_2\PersonalExpenseTracker\ExpenseLibrary\bin\Debug\net9.0\ExpenseLibrary.dll
+D:\DAC\MS .Net\Day_2\PersonalExpenseTracker\ExpenseLibrary\bin\Debug\net9.0\ExpenseLibrary.pdb
+D:\DAC\MS .Net\Day_2\PersonalExpenseTracker\ExpenseLibrary\obj\Debug\net9.0\ExpenseLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\DAC\MS .Net\Day_2\PersonalExpenseTracker\ExpenseLibrary\obj\Debug\net9.0\ExpenseLibrary.AssemblyInfoInputs.cache
+D:\DAC\MS .Net\Day_2\PersonalExpenseTracker\ExpenseLibrary\obj\Debug\net9.0\ExpenseLibrary.AssemblyInfo.cs
+D:\DAC\MS .Net\Day_2\PersonalExpenseTracker\ExpenseLibrary\obj\Debug\net9.0\ExpenseLibrary.csproj.CoreCompileInputs.cache
+D:\DAC\MS .Net\Day_2\PersonalExpenseTracker\ExpenseLibrary\obj\Debug\net9.0\ExpenseLibrary.dll
+D:\DAC\MS .Net\Day_2\PersonalExpenseTracker\ExpenseLibrary\obj\Debug\net9.0\refint\ExpenseLibrary.dll
+D:\DAC\MS .Net\Day_2\PersonalExpenseTracker\ExpenseLibrary\obj\Debug\net9.0\ExpenseLibrary.pdb
+D:\DAC\MS .Net\Day_2\PersonalExpenseTracker\ExpenseLibrary\obj\Debug\net9.0\ref\ExpenseLibrary.dll
