@@ -1,0 +1,79 @@
+
+namespace , class , 
+
+
+dotnet build -- command in terminal to compile and create exe file 
+
+dotnet run  --- to run the project 
+
+Software Design principles 
+
+solid - single responsibility principle 
+s: single responsibility principle 
+o : open closed principle (open for extensions ,  closed  for modifications ) 
+
+KISS : 
+DRY : Don't  Repeat Yourself 
+YAGNI : You Ain't Gonna Need it 
+clean code : 
+uncle Bob  : robert c Martin 
+scrum : agile methodology 
+
+
+clean code 
+::BOOK:: 
+
+talim : tehzib 
+
+Grady Booch : Oboject oriented Analysiss : red  white orange book you will see 
+1997 : third sem : sir purchased this book 
+
+satya nadella  no more crud operations 
+
+try to learn classics 
+tyr ot agile methodologies 
+try to learn oops 
+try to learn clean code 
+
+try to  11 : 05 sir time stamp : to loose AI 
+
+web application , android , web services , container , 
+
+anatomy of dotnet application 
+
+dotnet new sln : to generate new solution file sln file 
+
+FROM 11 :20 or 15 
+sir started web project ig 
+
+dotnet run 
+
+
+extension methods 
+
+debug and release mode 
+var ,annynose type 
+LINQ : lambda Function 
+constructor chaining 
+property and auto property 
+
+lambda :: deligate 
+
+cTS : common type system 
+value types 
+	primitive types ( int , float ,double) enum and structure 
+	referecence Types :
+		class ,, interface , delegate and event 
+
+c# language keyword : 
+	const , randomly 
+
+Banking Domain : 
+	Account : balance , withdraw , deposite 
+	
+	Tax deduction Logic : 
+
+Agent : : Function pointer ( broker , middle man) 
+a pointer who stores the address of function : function pointer 
+
+01;16 new project banking 
