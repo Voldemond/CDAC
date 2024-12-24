@@ -1,0 +1,307 @@
+Deligates and Events 
+
+awt : set java classes use to build desktop application 
+swing : use to build desktop application 
+Every technology has there own way of implementation 
+
+fs module in nodejs module 
+
+//early Binding ( compile time binding ) (static binding) 
+//Direct Invocation 
+
+event listeners : 
+//Multicast Delegate 
+//Broad Casting 
+chain of responsibility : 
+taxOperation master Operation = taxOperation1 + taxOperation2 ; 
+
+De chaining 
+masteroperation -= taxOperation1 
+
+// Dynamic Invocation (runtime Invocation ) (late binding) 
+// indirect call to the methods 
+proxy Pattern 
+//loose coupled highly cohesive  
+masterOperation.Invoke() ; (to call deligate ) 
+
+open account 
+account no. 
+GUID : Globally Unique Indentifier ( in dotnet ) 128 bit never reapeated in the world (ip + network + ) 
+
+close account 
+
+transfer account 
+string toAccountId , float amount 
+this.balance -= amount 
+transfer the amount to the 
+
+// Bussiness entity 
+.. Account has state and behaviour and events 
+public delegate  void AccountEventHandler(); 
+
+//states 
+accountNumber
+AccountHolderName
+
+//event : underbalance , overbalance , accountclosed , accountopened 
+pubilc event AccountOperation UnderBalandce
+
+//behaviour 
+opeaccount
+closeaccount 
+deposit 
+
+event handling all this 
+new module Notification 
+dotnet new classlib  -o Notification 
+dotnet sln add ./Notification\notification.csproj
+add reference in hdfcapp.csproj of AcctMgmt.csproj , notification.csproj 
+	notificationManager class 
+	we made it static which will made each method static 
+	sendemailnotification
+	sendsmsnotification
+	sendwhatsappnotification
+
+		payservicetax
+		paygsttax
+		income tax 30 % 
+
+\if we are using deligate all method signature should be matched 
+
+we are implementing seperation of concern 
+
+event deligation application 
+event driven mechanism 
+event handler 
+
+ui layer :handler :: presentation layer : notification 
+core layer :: acctmgmt 
+Adapter :: Taxation 
+
+9 :14 , 9 :17 :: tax comedy 
+
+9:32 :: skeleton of project Banking solution 
+
++= overloaded operator 
+
+wanted to build a application 
+started using visual studio 
+solidworks softwarae 
+blank solution :: SolidWorksSolution 
+right click new project windows  forms app  :: PaintBrush :: 9.0 
+
+program.cs
+form1.cs double click on form1.cs we can see [Design] 
+ we can drag and drop buttons 
+
+we can also write code 
+MessageBox.Show("Welcome to windows app"); 
+
+menustrip drag and drop : angular buttons select something 
+
+run the application 
+
+private void onFileExit(object sender,EventArgs e ) 
+{
+this.close(); 
+}
+
+trap mouse co-ordinate and give logic 
+
+trap keyboard and give logic 
+
+wind
+
+
+TaxManager.cs 
+
+namespace Taxation 
+class taxmanager 
+under stand Customers Business operations and their requireents 
+// analyze existng system and learn automation 
+// create design 
+
+NEW PROJECT IN VS CODE 
+
+new console - o langkeywordsApp
+dotnet sln add .\ 	reference 
+
+program.cs 
+
+sir repo tfldotnet 
+csharp.pdf
+
+UtilityManager.cs 
+
+class UtilityManager{
+public static void ViewNames(params string[] names) 
+{
+foreach ( var name in names ) 
+{
+
+program.cs 
+UtilityManager.viewNames ( " alice " , " bob" , "charlie"
+
+//pass by reference 
+public void swap (ref int a , ref int b ) 
+{
+int temp = a ; 
+a = b ; 
+b = temp ; 
+
+public void calculate ( int radius , out double area , out double circumference 
+
+{ 
+area = Math.Pi * radius *  radius 
+circumference = 2 * Math.PI * radius 
+
+
+down casting  // explicit casting 
+customer customer3 = obj as Customer ; // safe casting 
+
+reflection in c ++ called as RTTI ( RUn time type Information ) 
+in java and c# we called it as ( Reflection ) 
+// Reflection : getting metadata of a type at runtime 
+//system.reflection namespace 
+// type class , methodinfo , propertyinfo , fieldinfo 
+//constructor info , event info , assembly , module , parameterinfo , memberinfo 
+
+//using reflection we can perform task such as reverse compilation 
+Type t=customer3.GetType(); 
+Console.WriteLine(t.FullName);
+if(t.Name == "Customer"){
+console.WriteLine(" t is a customer") ;
+
+we cannot modify exe and dll 
+we need the source code to generate the exe and dll 
+
+socket io , this all are framework 
+
+
+cross compiling for dll will be emit in namespace 
+
+braindumbs , sanfoundry : stayaway from them 
+
+reverse engineering is the best way to build something 
+and this is called reflection 
+
+Library.cs 
+namespace LMS{
+public class Library {
+private List<Book> books ;
+public Library(){
+book = new List <Book>() ;
+
+aise konsi chiz hain jo dotnet main nahi bana sakte "" say this to sandy " said by the ravi tambade
+
+
+Customer.cs 
+namespace CRM {
+class Customer{
+
+string name { get ; set ;
+string Address { get ; set ; 
+stirng Email { get ; set ; 
+string 
+
+
+Program.cs 
+CustomerProfile customerProfile = new CustomerProfie();
+ICustomerDetails cust
+
+ICustomerDetails.cs 
+namespace CRM{
+interface ICustomerDetails{
+void showdetails();
+
+IOrderDetails.cs 
+namespace CRM{
+interface IorderDetails{
+void ShowDetails();
+
+CustomerProfile.cs
+namespace CRM{
+// in c# you can use mutliple interfaces in a class 
+
+public class CustomerProfile : ICustomerDetails , IOrderDetails{
+ void ICustomerDetails.ShowDetails() {
+
+void IOrderDetails.ShowDetails() {
+
+
+interfaces provides abastraction 
+you will always get access through interface 
+
+//explicit inteface inheritance 
+
+Player.cs
+namespace Sports {
+class Player {
+public string name { get ; set 
+public int age { get ; set 
+public int score { get ; set 
+public int Rank { get ; set; 
+
+program.cs 
+
+using sports ;
+//comparison logic 
+List<Player>  players = new List<player> {
+new player { Name="Alice", Score = 100 , Age= 25, Rank 
+
+//Nullable Types 
+int  ? i ; 
+i = null ; 
+
+Nullable <int>  j= null ; 
+j= nulll ;
+j= 67000 ; 
+
+you have to develop a software you need to learn all this concepts other wise 
+you will never be able to develop a software 
+
+SelectionCommityManager.cs
+namespace Sports{
+public class SelectionCommityManager:Icomparer<Player> {
+public int Compare(Player? x , Player ? y ) 
+{
+if ( x == null && y == null ) return 0 ; 
+if ( x == null ) return -1 ; 
+if ( y== null ) return 1 ; 
+
+DBManager.cs 
+
+namespace DAO {
+public class DBManager{
+console.WriteLine("DBManager instance Created"
+//external resouce allocation 
+//connection openn 
+//file open 
+
+public void Connect() {
+
+public void GetData() { 
+public void SaveData(){ 
+public void UpdateData(){
+
+~DBManager {
+Console.WriteLine("DBmanager Instance Destroyed");
+//external resource deallocation 
+//connection close 
+//file close 
+console. WriteLine("Connection released") 
+
+program.cs 
+DBmanager dbManager = new DBManager(); 
+dbManger.Getdata( String query( {
+Console.WriteLine("Data Fetched from database ") ; 
+
+public void SaveData 
+
+
+dbManager.GetData ("Select * from Employees");
+dbManager.GetData("
+dbManger.GetData ("
+
+
+13:56 on the rocks 
