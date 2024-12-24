@@ -1,0 +1,11 @@
+D:\tryout\CDAC\BankingSolution\Taxation\bin\Debug\net9.0\Taxation.deps.json
+D:\tryout\CDAC\BankingSolution\Taxation\bin\Debug\net9.0\Taxation.dll
+D:\tryout\CDAC\BankingSolution\Taxation\bin\Debug\net9.0\Taxation.pdb
+D:\tryout\CDAC\BankingSolution\Taxation\obj\Debug\net9.0\Taxation.GeneratedMSBuildEditorConfig.editorconfig
+D:\tryout\CDAC\BankingSolution\Taxation\obj\Debug\net9.0\Taxation.AssemblyInfoInputs.cache
+D:\tryout\CDAC\BankingSolution\Taxation\obj\Debug\net9.0\Taxation.AssemblyInfo.cs
+D:\tryout\CDAC\BankingSolution\Taxation\obj\Debug\net9.0\Taxation.csproj.CoreCompileInputs.cache
+D:\tryout\CDAC\BankingSolution\Taxation\obj\Debug\net9.0\Taxation.dll
+D:\tryout\CDAC\BankingSolution\Taxation\obj\Debug\net9.0\refint\Taxation.dll
+D:\tryout\CDAC\BankingSolution\Taxation\obj\Debug\net9.0\Taxation.pdb
+D:\tryout\CDAC\BankingSolution\Taxation\obj\Debug\net9.0\ref\Taxation.dll

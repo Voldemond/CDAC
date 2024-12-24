@@ -1,0 +1,140 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "AcctMgmt/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/AcctMgmt.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AcctMgmt.dll": {}
+        }
+      },
+      "Notification/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Notification.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Notification.dll": {}
+        }
+      },
+      "Taxation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Taxation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Taxation.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AcctMgmt/1.0.0": {
+      "type": "project",
+      "path": "../AcctMgmt/AcctMgmt.csproj",
+      "msbuildProject": "../AcctMgmt/AcctMgmt.csproj"
+    },
+    "Notification/1.0.0": {
+      "type": "project",
+      "path": "../Notification/Notification.csproj",
+      "msbuildProject": "../Notification/Notification.csproj"
+    },
+    "Taxation/1.0.0": {
+      "type": "project",
+      "path": "../Taxation/Taxation.csproj",
+      "msbuildProject": "../Taxation/Taxation.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "AcctMgmt >= 1.0.0",
+      "Notification >= 1.0.0",
+      "Taxation >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\tfladmin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\tryout\\CDAC\\BankingSolution\\HDFCApp\\HDFCApp.csproj",
+      "projectName": "HDFCApp",
+      "projectPath": "D:\\tryout\\CDAC\\BankingSolution\\HDFCApp\\HDFCApp.csproj",
+      "packagesPath": "C:\\Users\\tfladmin\\.nuget\\packages\\",
+      "outputPath": "D:\\tryout\\CDAC\\BankingSolution\\HDFCApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\tfladmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "D:\\tryout\\CDAC\\BankingSolution\\AcctMgmt\\AcctMgmt.csproj": {
+              "projectPath": "D:\\tryout\\CDAC\\BankingSolution\\AcctMgmt\\AcctMgmt.csproj"
+            },
+            "D:\\tryout\\CDAC\\BankingSolution\\Notification\\Notification.csproj": {
+              "projectPath": "D:\\tryout\\CDAC\\BankingSolution\\Notification\\Notification.csproj"
+            },
+            "D:\\tryout\\CDAC\\BankingSolution\\Taxation\\Taxation.csproj": {
+              "projectPath": "D:\\tryout\\CDAC\\BankingSolution\\Taxation\\Taxation.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

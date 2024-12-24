@@ -1,0 +1,11 @@
+D:\tryout\CDAC\BankingSolution\AcctMgmt\bin\Debug\net9.0\AcctMgmt.deps.json
+D:\tryout\CDAC\BankingSolution\AcctMgmt\bin\Debug\net9.0\AcctMgmt.dll
+D:\tryout\CDAC\BankingSolution\AcctMgmt\bin\Debug\net9.0\AcctMgmt.pdb
+D:\tryout\CDAC\BankingSolution\AcctMgmt\obj\Debug\net9.0\AcctMgmt.GeneratedMSBuildEditorConfig.editorconfig
+D:\tryout\CDAC\BankingSolution\AcctMgmt\obj\Debug\net9.0\AcctMgmt.AssemblyInfoInputs.cache
+D:\tryout\CDAC\BankingSolution\AcctMgmt\obj\Debug\net9.0\AcctMgmt.AssemblyInfo.cs
+D:\tryout\CDAC\BankingSolution\AcctMgmt\obj\Debug\net9.0\AcctMgmt.csproj.CoreCompileInputs.cache
+D:\tryout\CDAC\BankingSolution\AcctMgmt\obj\Debug\net9.0\AcctMgmt.dll
+D:\tryout\CDAC\BankingSolution\AcctMgmt\obj\Debug\net9.0\refint\AcctMgmt.dll
+D:\tryout\CDAC\BankingSolution\AcctMgmt\obj\Debug\net9.0\AcctMgmt.pdb
+D:\tryout\CDAC\BankingSolution\AcctMgmt\obj\Debug\net9.0\ref\AcctMgmt.dll

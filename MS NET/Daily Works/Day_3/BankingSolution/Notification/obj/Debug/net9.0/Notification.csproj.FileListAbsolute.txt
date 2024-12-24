@@ -1,0 +1,11 @@
+D:\tryout\CDAC\BankingSolution\Notification\bin\Debug\net9.0\Notification.deps.json
+D:\tryout\CDAC\BankingSolution\Notification\bin\Debug\net9.0\Notification.dll
+D:\tryout\CDAC\BankingSolution\Notification\bin\Debug\net9.0\Notification.pdb
+D:\tryout\CDAC\BankingSolution\Notification\obj\Debug\net9.0\Notification.GeneratedMSBuildEditorConfig.editorconfig
+D:\tryout\CDAC\BankingSolution\Notification\obj\Debug\net9.0\Notification.AssemblyInfoInputs.cache
+D:\tryout\CDAC\BankingSolution\Notification\obj\Debug\net9.0\Notification.AssemblyInfo.cs
+D:\tryout\CDAC\BankingSolution\Notification\obj\Debug\net9.0\Notification.csproj.CoreCompileInputs.cache
+D:\tryout\CDAC\BankingSolution\Notification\obj\Debug\net9.0\Notification.dll
+D:\tryout\CDAC\BankingSolution\Notification\obj\Debug\net9.0\refint\Notification.dll
+D:\tryout\CDAC\BankingSolution\Notification\obj\Debug\net9.0\Notification.pdb
+D:\tryout\CDAC\BankingSolution\Notification\obj\Debug\net9.0\ref\Notification.dll
