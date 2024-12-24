@@ -1,0 +1,16 @@
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\bin\Debug\net9.0-windows\PaintBrush.exe
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\bin\Debug\net9.0-windows\PaintBrush.deps.json
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\bin\Debug\net9.0-windows\PaintBrush.runtimeconfig.json
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\bin\Debug\net9.0-windows\PaintBrush.dll
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\bin\Debug\net9.0-windows\PaintBrush.pdb
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\obj\Debug\net9.0-windows\PaintBrush.Form1.resources
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\obj\Debug\net9.0-windows\PaintBrush.csproj.GenerateResource.cache
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\obj\Debug\net9.0-windows\PaintBrush.GeneratedMSBuildEditorConfig.editorconfig
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\obj\Debug\net9.0-windows\PaintBrush.AssemblyInfoInputs.cache
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\obj\Debug\net9.0-windows\PaintBrush.AssemblyInfo.cs
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\obj\Debug\net9.0-windows\PaintBrush.csproj.CoreCompileInputs.cache
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\obj\Debug\net9.0-windows\PaintBrush.dll
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\obj\Debug\net9.0-windows\refint\PaintBrush.dll
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\obj\Debug\net9.0-windows\PaintBrush.pdb
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\obj\Debug\net9.0-windows\PaintBrush.genruntimeconfig.cache
+D:\tryout\CDAC\SolidWorksSolution\PaintBrush\obj\Debug\net9.0-windows\ref\PaintBrush.dll
