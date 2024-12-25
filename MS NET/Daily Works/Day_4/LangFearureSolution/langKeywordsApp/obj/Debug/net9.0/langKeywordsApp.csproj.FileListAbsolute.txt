@@ -1,0 +1,14 @@
+D:\tryout\CDAC\LangFearureSolution\langKeywordsApp\bin\Debug\net9.0\langKeywordsApp.exe
+D:\tryout\CDAC\LangFearureSolution\langKeywordsApp\bin\Debug\net9.0\langKeywordsApp.deps.json
+D:\tryout\CDAC\LangFearureSolution\langKeywordsApp\bin\Debug\net9.0\langKeywordsApp.runtimeconfig.json
+D:\tryout\CDAC\LangFearureSolution\langKeywordsApp\bin\Debug\net9.0\langKeywordsApp.dll
+D:\tryout\CDAC\LangFearureSolution\langKeywordsApp\bin\Debug\net9.0\langKeywordsApp.pdb
+D:\tryout\CDAC\LangFearureSolution\langKeywordsApp\obj\Debug\net9.0\langKeywordsApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\tryout\CDAC\LangFearureSolution\langKeywordsApp\obj\Debug\net9.0\langKeywordsApp.AssemblyInfoInputs.cache
+D:\tryout\CDAC\LangFearureSolution\langKeywordsApp\obj\Debug\net9.0\langKeywordsApp.AssemblyInfo.cs
+D:\tryout\CDAC\LangFearureSolution\langKeywordsApp\obj\Debug\net9.0\langKeywordsApp.csproj.CoreCompileInputs.cache
+D:\tryout\CDAC\LangFearureSolution\langKeywordsApp\obj\Debug\net9.0\langKeywordsApp.dll
+D:\tryout\CDAC\LangFearureSolution\langKeywordsApp\obj\Debug\net9.0\refint\langKeywordsApp.dll
+D:\tryout\CDAC\LangFearureSolution\langKeywordsApp\obj\Debug\net9.0\langKeywordsApp.pdb
+D:\tryout\CDAC\LangFearureSolution\langKeywordsApp\obj\Debug\net9.0\langKeywordsApp.genruntimeconfig.cache
+D:\tryout\CDAC\LangFearureSolution\langKeywordsApp\obj\Debug\net9.0\ref\langKeywordsApp.dll
