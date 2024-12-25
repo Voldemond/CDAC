@@ -1,0 +1,154 @@
+Collection : a group of objects 
+Collection namespace: 
+system.collection.
+
+// SOA : Service Oriented Architecture
+// Collection interface: 
+//interface is a contract 
+//interface  is used to define specifications 
+// interface is used to define capabilities 
+
+
+// Collection interfaces: IEnumerable, ICollection, IList, IDictionary, ISet, IOrderedDictionary
+// IList: Add, Remove, Indexer, Contains, Clear, Insert, RemoveAt, IndexOf
+// ICollection: Count, IsReadOnly, Add, Remove, Contains, Clear, CopyTo
+// IEnumerable: GetEnumerator
+// IDictionary: Add, Remove, Contains, Clear, TryGetValue
+ISet : Add , Remove , Contains , Clear , UnionWith , IntersectWith ,ExceptWith ,  SymmetricExceptWith
+IOrderedDictionary: Add , Remove , Contains ,Clear , Insert , RemoveAt , IndexOf, GetByIndex , 
+// Collection classes: List, Dictionary, Queue, Stack, LinkedList,
+// HashSet, SortedSet, SortedList, SortedDictionary
+DRY : Don't repeat yourself 
+Don't reinvent the wheel 
+
+Dictionary<string , string> data = new Dictionary <string , string > {
+
+}
+
+create first Interface class and make its abstract methods 
+reuse exiting classes 
+extends interface 
+
+mature enginnering :- chemical engi, mechanical , civil , instrumental engin 
+
+ArrayList list = new ArrayList();
+list.Add(45) ; // boxing 
+list.Add(67); // boxing 
+
+int number1 = (int)list[0];// unboxing 
+
+not recommended to use arraylist 
+we will be using list 
+//namespace System.Collections.Generic   ---- generallly being use to recommended 
+List<int> list = new List<int>(); 
+list.Add(45); 
+list.Add(43);
+
+int number1 = list[0];
+
+graceful termination -- abnormal termination 
+
+partial keyword to 
+write code partially in partially divided files 
+
+shared assembly : a logical unit of deployment (dll, exe  ) 
+.net framework : 
+		shared assembly( reusable assembly kept in GAC)
+		GAC: GLOBAL  Assembly Cache 
+compiled .net code in one unit of execution -----assembly 
+
+HTTP --------------- HTTP web based Application  --------- asp (Active server Pages ) (jsp) 
+						asp.net ---------2000
+						webforms-----.aspx pages 
+Internet ------------- online Application (web application ) 
+intranet ------------- company portal employee --- online application (web application ) 
+Extranet ----------- portal for employees as well as vendors -------
+ 
+
+migration projects .net Framework to .net core 
+who know u will work on .net framework or .net core 
+
+NEW PROJECT 
+asp.net core web app (MODEL - View -Controller )
+
+project name 
+OnlineShoppingPortal
+
+9.0
+
+
+index.cshtml
+privacy.cshtml
+
+kesteral server , where web application is hosted of dotnet framework 
+it is a lightweight server 
+
+just install visual studio and after running it will run your program like nodejs 
+
+
+
+BREAK 
+
+WPT Module:
+Node JS, React, MySQL database HTML, CSS, Basics of Javascritp jQuery, Ajax $.ajax("url",{})- Bootstrap---Responsive UI Framework
+Basics of Web Programming concepts: Client side Scripting
+Server side Programming
+Server side Pages
+Web Server
+cookie, querystring, form html element action, method
+form
+
+
+vijaysalesVSCode
+dotnet new sln 
+dotnet new mvc  -o  OnlineShoppingPortal
+dotnet sln add ./OnlineShoppingPortal/OnlineShippingPortal.csproj 
+dotnet build 
+dotnet run --project .\OnlineShoppingPortal\OnlineShoppingPortal.csproj 
+
+
+
+razor view engine : views in c#  :: cshtml 
+
+create view 
+right click add view 
+then it will go into scalfolding process and create a view by automation in the visual studio 
+
+beauty 
+code 
+skeleton 
+
+all is coming together 
+
+c sharp code and dynamic html 
+
+
+13
+//1. Required: Makes the property as required
+//2. Range: Validates the property value within a specified range
+//3. MinLength: Validates the minimum length of a string property
+//4. MaxLength: Validates the maximum length of a string property
+//5. RegularExpression : Validates the property value against a regular expression pattern 
+//6. Compare: Validates two properties in a model
+//7. CreditCard: Validates a credit card number
+//8. EmailAddress: Validates an email address
+//9. Phone : Validates a phone number
+//10. Url: Validates a URL
+//11. DataType : Specifies the data type of a property
+//12. Display: Specifies the name to display for a property
+//13. ScaffoldColumn: Specifies whether a property is displayed in editor forms
+//14. Bind: Includes or excludes properties from model binding
+//15. Key Specifies the primary key of an entity
+//16. ForeignKey: Specifies the foreign key in a relationship
+//17. InverseProperty: Specifies the inverse of a navigation property in a relationship 
+//18. NotMapped : Specifies that a property or class is not mapped to the database 
+//19. Table: Specifies the table name for an entity
+//20. Column: Specifies the column name for a property
+//21. ComplexType: Specifies a complex type
+//22. DatabaseGenerated: Specifies how the database generates values for a property 
+//23. Inverse Property: Specifies the inverse of a navigation property in a relationship 
+//24. NotMapped: Specifies that a property or class is not mapped to the database 
+//25. Table: Specifies the table name for an entity
+//26. Column : Specifies the column name for a property
+
+
