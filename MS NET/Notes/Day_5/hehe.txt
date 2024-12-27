@@ -1,0 +1,84 @@
+
+
+Http protocol is a stateless 
+that is a reason we 
+
+state --- 
+
+state management 
+
+html helper function 
+view bag 
+
+CRUD operations 
+stored procedures 
+
+asp.net mvc 
+
+9:01 
+
+load balancing 
+
+http listner 
+builder.build 
+
+asp.net mvc architecture 
+addcontrollerswithviews 
+
+server side configuration 
+
+
+environmen is set in 
+appsettings.json
+
+app.use (functions are use for setting piplines ) 
+
+before mapcontrollerrouter function we set middleware configuration 
+like catching , routing , authorization , authentication , and jwt and many more 
+
+set the routing is necessary before settinup mapcontrollerroute 
+
+booting code 
+ActionResults
+viewbag 
+
+seperation of concerns 
+
+ioc concepts 
+ioc containers 
+
+orchestra 
+whenever we are writing enterprise application , it will always grow cause they will always demand more 
+
+therefore we have dependyinjection , mvc , add scope , transient , ioc 
+
+in repository we will be writing the logic of databases fetching data 
+
+decoupled , singleton , transient scope 
+json file : 
+
+ViewData 
+TempData 
+Forms using View in Controller 
+	login.cshtml 
+	register.cshtml 
+
+Database Connectivity 
+
+ADO.NET using MYSQL : connected Data Access 
+	Disconnected Data Access 
+
+ORM : Entity Framework: 
+REST API ( Web API Controllers ) 
+State Management Session, Cookies , QueryString ,Caching  
+Authentication 
+
+Action method : 
+orm Object relational mapping 
+EF Core : orm 
+Dapper : micro orm 
+Entity Framework : orm 
+
+tempdata 
+viewdata 
+viewbag 
