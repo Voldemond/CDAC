@@ -1,0 +1,127 @@
+Multi-threading 
+
+server side takes care of isolation 
+		       
+server side take care of all 
+a process thread pull , head , garbage collector  
+
+Normal console application is single threaded 
+windows basesd application is also called single threaded which was for eg ( solidworks ) paint 
+
+web application is by default is Multithreaded which are 
+by default created by boiler code . 
+
+Managed nudget : microsoft visualstudio.web.codegeneration 
+
+MySql.Data
+
+get-hep Nuget 
+
+cmd for packages 
+dotnet restore (it will see csproj file and see which package is mentioned and not installed ) 
+then dotnet  build 
+dotnet run 
+
+cd project(name)
+dotnet add package mysql.data 
+
+
+read data from databases 
+// using ADO.NET ( JDBC Like) 
+// using Dapper ( Micro ORM 
+Using entity Framework core ( orm ) ( hibernate ) 
+
+string connection ="server=localhost; database = ecommerce ; user = root ; password = root;"
+
+high data transmission tcp ip 
+
+web application using http 
+//ADO.NET Object Model 
+
+MySqlConnection connection = new MySqlConnection(connectionString);
+connection.Open();
+string query = "Select * From products ";
+
+command. insert , update , delete 
+command. select single value 
+command. select multiple values 
+
+databasereposritory  , project reposirotry 
+
+ADO.NET object Model 
+Interoperabillity : Meaning Interoperability 
+//cors Platform : 
+
+ADO : ActiveX Data Object 
+
+//Distributed Programming 
+Database: connectivity Crud from MySQL 
+COM : component Object Model 
+Active X : t echnology 
+
+OLE: Object Linking and Embedding
+ADO: ActiveX Data Object 
+//Enterprise Technologies : 
+//Active X 
+//Direct X 
+
+//.Net Framework 
+//Win FX 
+
+ado.NET Oject model ; 
+Set of Interfaces ;
+	IDbConnection,
+	IDbCommand,
+	IDbDataReader, IDbDataAdapter, 
+	DataSet , DataTable , DataRow , DataColoumn 
+
+
+1.Connected Data Access 
+	MS-SQL server (official RDMS: provided by Microsoft ) 
+	System.Data.SqlClient
+
+	MySqlConnection , MySqlCommand , MySqlParameter ,  MySqlDataReader
+	mysql: 
+	MySql.Data.MySqlClient
+
+	MySqlConnection , MySqlCommand , MySqlParameter , SqlDataReader 
+	
+	oracle: 
+	         
+
+	
+2.Disconnected Data Access 
+	MySqlConnection, MySqlCommand , MySqlParameter , DataSet , MySqlDataAdapter
+
+
+person.cs 
+//Collection .net 
+
+//method overriding take place for method which are declared 
+//virtual or abstract method in parent class 
+
+super is replaced with  base in c# from java 
+
+
+//employee.cs 
+//member initialized list 
+
+we are using virtual method in employee.cs 
+but we may or may not be implementing in its child 
+
+
+interface is always 
+
+12:24  12:20 
+
+operator overloading in java is not possible 
+
+friend function in C++ 
+
+operator overloading in c# 
+but they should be static by there method : 
+class can contain static or non static variables 
+
+
+
+
