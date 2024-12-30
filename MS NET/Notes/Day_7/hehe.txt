@@ -1,0 +1,65 @@
+
+Todays Agenda:
+asp.net mvc core Application
+building asp.net app Model binding
+tag helpers in view
+all tag helpers are extension methods
+partial Views
+connections string will be managed through appsettings.json CRUD Operations using ADO.Net
+MVC :View
+Razor Syntax:
+HTML + C# code + tag helpers
+.cshtml
+tag helpers library
+: @html.labelFor
+@html.textFor
+razor script is parse by Razor View Engine
+razor engine 
+
+taghelpers razor helpers take care of gui 
+
+asp for 
+asp text 
+
+
+helper class 
+customDivTagHelper 
+
+jakarta 
+glassfish 
+
+
+multiple chart using chart.js 
+
+
+
+
+add action methods to dashboards controller to send revenu data on 
+
+
+asp.net web api is just like spring in java 
+
+onlineshoppingapi
+no secure https 
+use controllers 
+
+in vijay salesvscode 
+we have 2 projects which are 
+online shopping api 
+online shopping portal 
+
+class library -- type of project 
+services 
+
+class library - 
+Reposirtories  -- one more seperate project 
+
+class library - 
+Entities -- one more seperate  projec t
+layered architecture , more projects , more frameworks , more github projects 
+
+onion architecture 
+entity layer middle  
+repository middle outer 
+presentation outermost 
+
