@@ -1,0 +1,50 @@
+
+Todays Agenda:
+Minimal Code Strategy
+Connected data Access CRUD Operations
+Disconnected data Access CRUD Operations
+Entity Framework : Implementation for Products Repository 1.Install nugget package Mysql.Data.Entity Framework 2. Define ProductDBContext Class I
+3. Define Product DB Set
+4.override methods of ProductDBContext for connection setup and Entity Relationship definition
+5.Use ORM Services configuration in program.cs file
+Invoking Stored Procedures from repository layer asp.net Core MVC
+asp.net Core Web API implementation
+
+
+minimal code strategy 
+
+entity 
+repository 
+repository 
+repository implementation 
+database connected disconnected 
+crud operations 
+
+mysql.data.EntityFrameworkCore
+
+orm technique 
+
+data first approch 
+
+Code first approach 
+
+
+async await , 
+non blocking  call      ,      blocking  call   
+ 
+helper functionality  = > Task 
+
+Task.Delay (10000) ; 
+
+getasync 
+
+
+using System.Threading ; 
+
+console.writeline("Main Program Execution started ..... ") ; 
+Thread.Sleep(1000) ; 
+
+console.WriteLine("Main program execution is about to finish ... ") ;
+
+bombil fry , tava fry , soul kadi , kombdi vade  , jwari bhakari
+
